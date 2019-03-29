@@ -7,8 +7,8 @@ $theme-colors: (
       //"info":       $info,
       //"warning":    $warning,
       //"danger":     $danger,
-      //"light":      $light,
-      //"dark":       $dark
+      "light":      #D6D6D6,
+      "dark":       #222222
 );
 
 //Mixins
@@ -22,6 +22,15 @@ $theme-colors: (
   user-select: none;
 }
 
+*:focus, *:active {
+  outline: none !important;
+  border: none !important;
+}
+
+.navbar-toggler:focus {
+  background: initial;
+}
+
 .nav-item {
   left: 2em;
   padding-right: 2em;
@@ -29,8 +38,14 @@ $theme-colors: (
 
 .nav-link {
     //color: map-get($theme-colors, "primary") !important;
-    color: #000 !important;
-    opacity: .8;
+    color: #fff !important;
+    opacity: .6 !important;
+}
+
+.navbar-brand {
+  font-family: "Caviar Dreams";
+  font-size: 20pt !important;
+
 }
 
 .nav-link:hover {
@@ -151,17 +166,17 @@ h2 {
   h2 {
     font-size: 20pt;
   }
-  .nav-item {
-    background-color: #fff;
-    padding-left: 1em;
-
-    .nav-link:hover {
-      text-decoration: none !important;
-    }
-  }
-  .nav-item:hover {
-    background-color: #aaa
-  }
+  //.nav-item {
+  //  background-color: #fff;
+  //  padding-left: 1em;
+  //
+  //  .nav-link:hover {
+  //    text-decoration: none !important;
+  //  }
+  //}
+  //.nav-item:hover {
+  //  background-color: #AAAAAA !important;
+  //}
 }
 
 .landingTextContainer {
@@ -219,7 +234,7 @@ h2 {
 
 #landingContainerMain {
   position: relative;
-  top: -100px;
+  //top: -100px;
 }
 
 #mugAndTentacle {

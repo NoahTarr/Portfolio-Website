@@ -2,7 +2,7 @@
 <html class="no-js" lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Noah Tarr's Portfolio</title>
+    <title>Noah Tarr</title>
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
@@ -46,11 +46,11 @@
 
     <div class="container" id="landingContainerMain">
         <div class="col" id="landingContainer"></div>
-        <div class="row" id="scrollArrow">
-            <a href="#about" class="d-block m-auto">
-                <svg class="m-5" xmlns="http://www.w3.org/2000/svg" width="51.61" height="24.65" viewBox="0 0 51.61 24.65"><title>Scroll Arrow</title><polyline points="1.56 1.96 26.06 21.46 50.06 2.46" fill="none" stroke="#ffa270" stroke-miterlimit="10" stroke-width="5"/></svg>
-            </a>
-        </div>
+<!--        <div class="row" id="scrollArrow">-->
+<!--            <a href="#about" class="d-block m-auto">-->
+<!--                <svg class="m-5" xmlns="http://www.w3.org/2000/svg" width="51.61" height="24.65" viewBox="0 0 51.61 24.65"><title>Scroll Arrow</title><polyline points="1.56 1.96 26.06 21.46 50.06 2.46" fill="none" stroke="#ffa270" stroke-miterlimit="10" stroke-width="5"/></svg>-->
+<!--            </a>-->
+<!--        </div>-->
     </div>
 
 
