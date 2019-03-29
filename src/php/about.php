@@ -23,5 +23,37 @@
 
             </div>
         </div>
+        <div class="row">
+            <div class="col-lg-4 col-sm-12">
+                <h5 class="text-muted">
+                    Programming Languages.
+                </h5>
+                <p>C++</p>
+                <p>C# .net</p>
+                <p>Java</p>
+                <p>JavaScript</p>
+                <p>PHP</p>
+                <p>SQL</p>
+            </div>
+            <div class="col-lg-4 col-sm-12">
+                <h5 class="text-muted">
+                    Other Languages.
+                </h5>
+                <p>XML</p>
+                <p>JSON</p>
+                <p>HTML</p>
+                <p>CSS</p>
+                <p>SASS/SCSS</p>
+            </div>
+            <div class="col-lg-4 col-sm-12">
+                <h5 class="text-muted">
+                    Software.
+                </h5>
+                <p>Git</p>
+                <p>TFS</p>
+                <p>Trello</p>
+                <p>Slack</p>
+            </div>
+        </div>
     </div>
 </div>
