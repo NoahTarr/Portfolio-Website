@@ -1,0 +1,332 @@
+// Variable Overrides
+
+$theme-colors: (
+      "primary":    #bf6567,
+      "secondary":  #ffa270,
+      //"success":    $success,
+      //"info":       $info,
+      //"warning":    $warning,
+      //"danger":     $danger,
+      //"light":      $light,
+      //"dark":       $dark
+);
+
+//Mixins
+
+@mixin unselectable() {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.nav-item {
+  left: 2em;
+  padding-right: 2em;
+}
+
+.nav-link {
+    //color: map-get($theme-colors, "primary") !important;
+    color: #000 !important;
+    opacity: .8;
+}
+
+.nav-link:hover {
+    opacity: 1 !important;
+    text-decoration: underline !important;
+}
+
+body {
+  background: url("../assets/Background.png");
+}
+
+html, body {
+  overflow-x:hidden;
+}
+
+svg {
+  @include unselectable();
+}
+
+// Bootstrap Sass Files - this is required to change the theme
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+//fonts
+@font-face {
+  font-family: "Ink Free";
+  src: url("../fonts/InkFree.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Caviar Dreams";
+  src: url("../fonts/CaviarDreams.ttf") format("truetype");
+}
+
+//*********************
+//tentacles
+//*********************
+.tentacle1 {
+  position: absolute;
+  left: -250px;
+  top: 1000px;
+  z-index: 100;
+}
+
+.tentacle2 {
+  position: absolute;
+  right: -100px;
+  top: 1800px;
+  z-index: 100;
+}
+
+@media (max-width: 1730px) {
+  .tentacle1 {
+    left: -350px;
+  }
+}
+@media (max-width: 1520px) {
+  .tentacle1 {
+    left: -450px;
+  }
+}
+@media (max-width: 1350px) {
+  .tentacle1 {
+    display: none;
+  }
+  .tentacle2 {
+    right: -200px;
+  }
+}
+@media (max-width: 1200px) {
+  .tentacle1 {
+    display: block;
+  }
+}
+@media (max-width: 1140px) {
+  .tentacle1 {
+    display: none;
+  }
+  .tentacle2 {
+    right: -300px;
+  }
+}
+@media (max-width: 992px) {
+  .tentacle1 {
+    display: block;
+  }
+}
+@media (max-width: map_get($grid-breakpoints, md)) {
+  .tentacle1 {
+    display: none;
+  }
+  .tentacle2 {
+    display: none;
+  }
+  #scrollArrow {
+    display: none;
+  }
+}
+
+//*********************
+//typography
+//*********************
+h1 {
+  @include unselectable();
+  font-family: "Ink Free";
+  font-size: 120pt;
+}
+
+h3 {
+  font-family: "Caviar Dreams";
+  font-size: 25pt;
+}
+
+h2 {
+  font-family: "Caviar Dreams";
+  font-size: 28pt;
+}
+@media (max-width: map_get($grid-breakpoints, sm)) {
+  h2 {
+    font-size: 20pt;
+  }
+  .nav-item {
+    background-color: #fff;
+    padding-left: 1em;
+
+    .nav-link:hover {
+      text-decoration: none !important;
+    }
+  }
+  .nav-item:hover {
+    background-color: #aaa
+  }
+}
+
+.landingTextContainer {
+  vertical-align: bottom;
+}
+
+.landingText {
+  position: absolute;
+  bottom: 0;
+
+  h2 {
+    text-align: center;
+  }
+}
+
+.material-icons {
+  @include unselectable();
+  vertical-align: middle;
+  color: map-get($theme-colors, "secondary");
+}
+
+
+
+//*********************
+//Containers
+//*********************
+.sectionHeader {
+  height: 150px;
+  margin-bottom: 50px;
+  display: block;
+  h1 {
+    color: #aaa;
+    position: absolute;
+  }
+  h3 {
+    color: #000;
+    position: absolute;
+    bottom: 0;
+  }
+}
+
+@media (max-width: map_get($grid-breakpoints, sm))
+{
+  .sectionHeader {
+    height: initial;
+  }
+  h1 {
+    display: none;
+  }
+  h3 {
+    position: initial;
+    font-weight: bold;
+  }
+}
+
+#landingContainerMain {
+  position: relative;
+  top: -100px;
+}
+
+#mugAndTentacle {
+  width: 815.58px;
+  height: 715.3px;
+}
+
+#smallLandingDesc {
+  margin: 3rem;
+}
+
+@media (max-width: map-get($grid-breakpoints, lg)) {
+  #landingContainerMain {
+    top: -200px;
+  }
+}
+
+
+@media (max-width: map_get($grid-breakpoints, md)) {
+  #mugAndTentacle {
+    height: 600px;
+    width: 572px;
+  }
+  #smallLandingDesc {
+    margin: 0;
+  }
+}
+
+#about {
+  padding-top: 75px;
+  padding-bottom: 75px;
+  min-height: 500px;
+  color: #aaa;
+  background-color: #222;
+  -webkit-clip-path: polygon(0 14%, 100% 0%, 100% 97%, 0 91%);
+  clip-path: polygon(0 14%, 100% 0%, 100% 97%, 0 91%);
+
+  h1 {
+    color: #333;
+  }
+
+  h3 {
+    color: #fff;
+  }
+}
+
+@media (max-width: map_get($grid-breakpoints, sm)) {
+  #about {
+    -webkit-clip-path: initial;
+    clip-path: initial;
+  }
+}
+
+
+#contact {
+  padding-top: 75px;
+  padding-bottom: 75px;
+  min-height: 500px;
+}
+
+
+#timeline {
+  padding-top: 75px;
+  padding-bottom: 75px;
+  min-height: 500px;
+  color: #aaa;
+  background-color: #222;
+  -webkit-clip-path: polygon(37% 80px, 100% 0, 100% 100%, 0 100%, 0 0);
+  clip-path: polygon(37% 80px, 100% 0, 100% 100%, 0 100%, 0 0);
+
+  h1 {
+    color: #333;
+  }
+
+  h3 {
+    color: #fff;
+  }
+
+  svg {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
+  }
+}
+
+@media (max-width: map_get($grid-breakpoints, sm)) {
+  #timeline {
+    -webkit-clip-path: initial;
+    clip-path: initial;
+  }
+}
+
+
+//*********************
+//Helper Classes
+//*********************
+.noUnderline {
+  text-decoration: none !important;
+}
+
+.unselectable {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.m-t-5 {
+  margin-top: 5em;
+}
