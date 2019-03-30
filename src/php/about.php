@@ -37,7 +37,7 @@
             </div>
             <div class="col-lg-4 col-sm-12">
                 <h5 class="text-muted">
-                    Other Languages.
+                    Other Tech.
                 </h5>
                 <p>XML</p>
                 <p>JSON</p>
@@ -50,6 +50,7 @@
                     Software.
                 </h5>
                 <p>Git</p>
+                <p>Github</p>
                 <p>TFS</p>
                 <p>Trello</p>
                 <p>Slack</p>
