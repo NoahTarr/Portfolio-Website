@@ -27,6 +27,10 @@ $theme-colors: (
   border: none !important;
 }
 
+#navbar-toggler:focus, #navbar-toggler:hover, #navbar-toggler:active {
+  background-color: map-get($theme-colors, "dark") !important;
+}
+
 .navbar-toggler:focus {
   background: initial;
 }
@@ -265,7 +269,7 @@ h2 {
 
 #about {
   padding-top: 75px;
-  padding-bottom: 75px;
+  padding-bottom: 100px;
   min-height: 500px;
   color: #aaa;
   background-color: #222;

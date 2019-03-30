@@ -13,12 +13,13 @@
         </div>
         <div class="row">
             <div class="col-lg-6 col-md-12">
-                <p><i class="material-icons">phone</i> Text or Call Me.   1.208.446.4435</p>
-                <p><i class="material-icons">email</i> Send me an Email.   <a href="mailto:noahtarr1@gmail.com">noahtarr1@gmail.com</a></p>
+                <p class="d-inline-block"><i class="material-icons">phone</i><div class="text-muted d-inline-block">Text or Call Me.</div>   1.208.446.4435</p>
+                <p class="d-inline-block"><i class="material-icons">email</i><div class="text-muted d-inline-block">Send me an Email.</div>   <a href="mailto:noahtarr1@gmail.com">noahtarr1@gmail.com</a></p>
+                <p class="d-inline-block"><i class="material-icons">location_on</i> <div class="text-muted d-inline-block">Location.</div> Santa Rosa, CA</p>
             </div>
             <div class="col-lg-6 col-md-12">
-                <p><i class="material-icons">business_center</i> Peak at my <a href="/resume.pdf" download>RESUME</a>.</p>
-                <p><i class="material-icons">forum</i> Connect With Me.
+                <p class="d-inline-block"><i class="material-icons">business_center</i> Peak at my <a href="/resume.pdf" download>RESUME</a>.</p>
+                <p class="d-inline-block"><i class="material-icons">forum</i> Connect With Me.
                     <a class="m-2 noUnderline" href="https://www.linkedin.com/in/noah-tarr-04834b133/" target="_blank">
                         <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25"><title>Untitled-1</title><path d="M630.51,503.18h20.75s0,0,0,0a2.43,2.43,0,0,1,2,1.82c0,.08,0,.18.08.24v20.85s0,0-.05.07a2.5,2.5,0,0,1-2.67,2H631.07a2.5,2.5,0,0,1-2.66-2.65q0-9.82,0-19.64c0-.1,0-.2,0-.29a2.51,2.51,0,0,1,1.76-2.3A.84.84,0,0,0,630.51,503.18Zm11.07,11.33c0-.4,0-.74,0-1.08,0-.16,0-.21-.2-.21h-2.44c-.15,0-.19,0-.19.19q0,4.58,0,9.15c0,.18.07.21.22.2.83,0,1.66,0,2.49,0,.21,0,.25-.05.25-.25,0-1.66,0-3.32,0-5a2.13,2.13,0,0,1,.38-1.29,1.59,1.59,0,0,1,1.66-.63,1.41,1.41,0,0,1,1.16,1,2.75,2.75,0,0,1,.12.89c0,1.65,0,3.3,0,5,0,.21.06.25.26.25.84,0,1.68,0,2.51,0,.17,0,.22,0,.21-.21,0-2,0-3.94,0-5.91a5,5,0,0,0-.14-1.23,3,3,0,0,0-2.11-2.31,4.49,4.49,0,0,0-2-.08A3.26,3.26,0,0,0,641.59,514.51ZM636.89,518c0-1.5,0-3,0-4.51,0-.16,0-.23-.2-.23q-1.29,0-2.59,0c-.16,0-.18.05-.18.2q0,4.56,0,9.12c0,.15,0,.19.19.19.85,0,1.71,0,2.56,0,.19,0,.23-.05.23-.23C636.89,521,636.89,519.51,636.89,518Zm-3.22-7.81a1.73,1.73,0,0,0,3.47,0,1.73,1.73,0,1,0-3.47,0Z" transform="translate(-628.41 -503.18)" fill="#0077b5"/></svg>
                     </a>

@@ -24,7 +24,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-lg-4 col-sm-12">
+            <div class="col-lg-4 col-sm-6">
                 <h5 class="text-muted">
                     Programming Languages.
                 </h5>
@@ -35,7 +35,16 @@
                 <p>PHP</p>
                 <p>SQL</p>
             </div>
-            <div class="col-lg-4 col-sm-12">
+            <div class="col-lg-4 col-sm-6">
+                <h5 class="text-muted">
+                    Software.
+                </h5>
+                <p>Git</p>
+                <p>TFS</p>
+                <p>Trello</p>
+                <p>Slack</p>
+            </div>
+            <div class="col-lg-4 col-sm-6">
                 <h5 class="text-muted">
                     Other Tech.
                 </h5>
@@ -44,16 +53,6 @@
                 <p>HTML</p>
                 <p>CSS</p>
                 <p>SASS/SCSS</p>
-            </div>
-            <div class="col-lg-4 col-sm-12">
-                <h5 class="text-muted">
-                    Software.
-                </h5>
-                <p>Git</p>
-                <p>Github</p>
-                <p>TFS</p>
-                <p>Trello</p>
-                <p>Slack</p>
             </div>
         </div>
     </div>

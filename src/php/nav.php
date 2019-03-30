@@ -8,7 +8,7 @@
 
     <a class="navbar-brand mx-auto text-light">Noah Tarr</a>
     <!--    For Mobile Support-->
-    <button class="navbar-toggler bg-dark border-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" >
+    <button id="navbar-toggler" class="navbar-toggler bg-dark border-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" >
         <span class="navbar-toggler-icon"></span>
     </button>
 
