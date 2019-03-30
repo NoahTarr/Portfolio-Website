@@ -58,7 +58,8 @@ $theme-colors: (
 }
 
 body {
-  background: url("../assets/Background.png");
+  //background: url("../assets/Background.png");
+  background-color: #D6D6D6 !important;
 }
 
 html, body {
@@ -86,61 +87,79 @@ svg {
 //*********************
 //tentacles
 //*********************
-.tentacle1 {
+#tentacle1 {
   position: absolute;
   left: -250px;
-  top: 1000px;
+  //top: 1000px;
+  top: 100%;
   z-index: 100;
 }
 
-.tentacle2 {
+#tentacle2 {
   position: absolute;
   right: -100px;
-  top: 1800px;
+  //top: 1800px;
+  top: 200%;
+  z-index: 100;
+}
+
+#tentacle3 {
+  position: absolute;
+  left: -200px;
+  //top: 1800px;
+  top: 300%;
+  z-index: 100;
+}
+
+#tentacle4 {
+  position: absolute;
+  right: -50px;
+  //top: 1800px;
+  top: 400%;
   z-index: 100;
 }
 
 @media (max-width: 1730px) {
-  .tentacle1 {
+  #tentacle1 {
     left: -350px;
   }
 }
 @media (max-width: 1520px) {
-  .tentacle1 {
+  #tentacle1 {
     left: -450px;
   }
 }
 @media (max-width: 1350px) {
-  .tentacle1 {
+  #tentacle1 {
     display: none;
   }
-  .tentacle2 {
+  #tentacle2 {
     right: -200px;
   }
 }
 @media (max-width: 1200px) {
-  .tentacle1 {
+  #tentacle1 {
     display: block;
   }
 }
 @media (max-width: 1140px) {
-  .tentacle1 {
+  #tentacle1 {
     display: none;
   }
-  .tentacle2 {
+  #tentacle2 {
     right: -300px;
   }
 }
 @media (max-width: 992px) {
-  .tentacle1 {
+  #tentacle1 {
     display: block;
   }
 }
 @media (max-width: map_get($grid-breakpoints, md)) {
-  .tentacle1 {
+  #tentacle1 {
     display: none;
   }
-  .tentacle2 {
+  #tentacle2 {
     display: none;
   }
   #scrollArrow {
