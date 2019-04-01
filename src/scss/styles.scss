@@ -341,10 +341,18 @@ h2 {
   }
 }
 
+#timelineSVG {
+  margin-top: 5em;
+}
+
 @media (max-width: map_get($grid-breakpoints, sm)) {
   #timeline {
     -webkit-clip-path: initial;
     clip-path: initial;
+  }
+
+  #timelineSVG {
+    margin-top: 0;
   }
 }
 

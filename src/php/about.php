@@ -41,6 +41,8 @@
                 </h5>
                 <p>Git</p>
                 <p>TFS</p>
+                <p>Photoshop</p>
+                <p>Illustrator</p>
                 <p>Trello</p>
                 <p>Slack</p>
             </div>
