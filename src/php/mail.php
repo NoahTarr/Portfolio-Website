@@ -4,6 +4,7 @@ $email = $_POST['email'];
 $message = $_POST['message'];
 $subject = $_POST['subject'];
 $captcha = $_POST['captcha'];
+$captchaValue = $_POST['captchaValue'];
 
 header('Content-Type: application/json');
 if (empty($name)){
@@ -27,7 +28,7 @@ if ($message === ''){
     print json_encode(array('message' => 'Message cannot be empty', 'code' => 0));
     exit();
 }
-if ($captcha !== '3') {
+if ($captcha !== strval($captchaValue)) {
     if ($captcha === '') {
         print json_encode(array('message' => 'Please enter the captcha', 'code' => 0));
     }
