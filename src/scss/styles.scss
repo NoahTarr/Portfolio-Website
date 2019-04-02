@@ -22,7 +22,7 @@ $theme-colors: (
   user-select: none;
 }
 
-*:focus, *:active {
+nav > *:focus, nav > *:active {
   outline: none !important;
   border: none !important;
 }
@@ -68,6 +68,7 @@ html, body {
 
 svg {
   @include unselectable();
+  pointer-events: none;
 }
 
 // Bootstrap Sass Files - this is required to change the theme
@@ -90,15 +91,13 @@ svg {
 #tentacle1 {
   position: absolute;
   left: -250px;
-  //top: 1000px;
   top: 100%;
   z-index: 100;
 }
 
 #tentacle2 {
   position: absolute;
-  right: -100px;
-  //top: 1800px;
+  right: -200px;
   top: 200%;
   z-index: 100;
 }
@@ -106,7 +105,6 @@ svg {
 #tentacle3 {
   position: absolute;
   left: -200px;
-  //top: 1800px;
   top: 300%;
   z-index: 100;
 }
@@ -114,11 +112,11 @@ svg {
 #tentacle4 {
   position: absolute;
   right: -50px;
-  //top: 1800px;
   top: 400%;
   z-index: 100;
 }
 
+//tentacle1 Media Queries
 @media (max-width: 1730px) {
   #tentacle1 {
     left: -350px;
@@ -133,9 +131,6 @@ svg {
   #tentacle1 {
     display: none;
   }
-  #tentacle2 {
-    right: -200px;
-  }
 }
 @media (max-width: 1200px) {
   #tentacle1 {
@@ -145,9 +140,6 @@ svg {
 @media (max-width: 1140px) {
   #tentacle1 {
     display: none;
-  }
-  #tentacle2 {
-    right: -300px;
   }
 }
 @media (max-width: 992px) {
@@ -159,10 +151,49 @@ svg {
   #tentacle1 {
     display: none;
   }
+  #scrollArrow {
+    display: none;
+  }
+}
+
+//tentacle2 Media Queries
+@media (max-width: 1681px)
+{
+  #tentacle2 {
+    right: -300px;
+  }
+}
+@media (max-width: 1477px)
+{
+  #tentacle2 {
+    right: -400px;
+  }
+}
+@media (max-width: 1280px)
+{
   #tentacle2 {
     display: none;
   }
-  #scrollArrow {
+}
+@media (max-width: map_get($grid-breakpoints, xl))
+{
+  #tentacle2 {
+    display: initial;
+  }
+}
+@media (max-width: 1147px)
+{
+  #tentacle2 {
+    display: none;
+  }
+}
+@media (max-width: map_get($grid-breakpoints, lg)) {
+  #tentacle2 {
+    display: initial;
+  }
+}
+@media (max-width: 933px) {
+  #tentacle2 {
     display: none;
   }
 }
@@ -189,17 +220,6 @@ h2 {
   h2 {
     font-size: 20pt;
   }
-  //.nav-item {
-  //  background-color: #fff;
-  //  padding-left: 1em;
-  //
-  //  .nav-link:hover {
-  //    text-decoration: none !important;
-  //  }
-  //}
-  //.nav-item:hover {
-  //  background-color: #AAAAAA !important;
-  //}
 }
 
 .landingTextContainer {
@@ -218,7 +238,11 @@ h2 {
 .material-icons {
   @include unselectable();
   vertical-align: middle;
-  color: map-get($theme-colors, "secondary");
+  color: map-get($theme-colors, primary);
+}
+
+#iconLarge {
+  font-size: 24pt;
 }
 
 
@@ -358,6 +382,151 @@ h2 {
 
 
 //*********************
+//Contact Form
+//*********************
+//Reset some styles from bootstrap
+textarea:focus,
+textarea.form-control:focus,
+input.form-control:focus,
+input[type=text]:focus,
+input[type=password]:focus,
+input[type=email]:focus,
+input[type=number]:focus,
+[type=text].form-control:focus,
+[type=password].form-control:focus,
+[type=email].form-control:focus,
+[type=tel].form-control:focus,
+[contenteditable].form-control:focus {
+  background-color: initial;
+  -webkit-box-shadow: initial;
+  -moz-box-shadow: initial;
+  box-shadow: none !important;
+  outline: 0 !important;
+}
+
+.form-control {
+  background-color: initial;
+}
+
+.form-label-group input,
+.form-label-group textarea{
+  border-bottom: solid 2px map_get($theme-colors, dark);
+  color: map_get($theme-colors, dark);
+}
+.form-label-group input:focus,
+.form-label-group textarea:focus {
+  border-bottom: solid 2px map_get($theme-colors, primary);
+}
+
+.form-control{
+  border: none;
+}
+
+.btn-primary:hover,.btn-primary:focus,.btn-primary:active,
+.btn-primary:active:focus:not(:disabled):not(.disabled),
+.btn:focus, .btn:active, .btn:hover{
+  box-shadow: none!important;
+  outline: 0;
+}
+
+label {
+  @include unselectable();
+}
+
+//Floating Labels for Form
+:root {
+  --input-padding-x: .75rem;
+  --input-padding-y: .75rem;
+}
+
+.form-control:focus {
+  color: map_get($theme-colors, dark) !important;
+}
+
+.form-label-group {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.form-label-group > input,
+.form-label-group > textarea,
+.form-label-group > label {
+  padding: var(--input-padding-y) var(--input-padding-x);
+  cursor: text !important;
+}
+
+.form-label-group > label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  margin-bottom: 0; /* Override default `<label>` margin */
+  line-height: 1.5;
+  color: #495057;
+  border: 1px solid transparent;
+  border-radius: .25rem;
+  -webkit-transition: all .1s ease-in-out;
+  -moz-transition: all .1s ease-in-out;
+  -ms-transition: all .1s ease-in-out;
+  -o-transition: all .1s ease-in-out;
+  transition: all .1s ease-in-out, color 0s;
+}
+
+.form-label-group textarea::-webkit-input-placeholder,
+.form-label-group input::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.form-label-group textarea:-ms-input-placeholder,
+.form-label-group input:-ms-input-placeholder {
+  color: transparent;
+}
+
+.form-label-group textarea::-ms-input-placeholder,
+.form-label-group input::-ms-input-placeholder {
+  color: transparent;
+}
+
+.form-label-group textarea::-moz-placeholder,
+.form-label-group input::-moz-placeholder {
+  color: transparent;
+}
+
+.form-label-group textarea::placeholder,
+.form-label-group input::placeholder {
+  color: transparent;
+}
+
+.form-label-group textarea:placeholder-shown:focus ~ label,
+.form-label-group input:placeholder-shown:focus ~ label {
+  color: map_get($theme-colors, primary) !important;
+  -webkit-transition: none;
+  -moz-transition: none;
+  -ms-transition: none;
+  -o-transition: none;
+  transition: none;
+}
+
+.form-label-group textarea:not(:placeholder-shown),
+.form-label-group input:not(:placeholder-shown) {
+  padding-top: calc(var(--input-padding-y) + var(--input-padding-y) * (2 / 3));
+  padding-bottom: calc(var(--input-padding-y) / 3);
+}
+
+.form-label-group textarea:not(:placeholder-shown) ~ label,
+.form-label-group input:not(:placeholder-shown) ~ label {
+  padding-top: calc(var(--input-padding-y) / 3);
+  padding-bottom: calc(var(--input-padding-y) / 3);
+  font-size: 12px;
+}
+
+.form-label-group textarea:not(:placeholder-shown):focus ~ label,
+.form-label-group input:not(:placeholder-shown):focus ~ label {
+  color: map_get($theme-colors, primary) !important;
+}
+
+//*********************
 //Helper Classes
 //*********************
 .noUnderline {
@@ -376,3 +545,4 @@ h2 {
 .m-t-5 {
   margin-top: 5em;
 }
+

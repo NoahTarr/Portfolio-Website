@@ -10,7 +10,7 @@
                 <div class="row">
                     <div class="col sectionHeader" id="aboutText">
                         <h1>About</h1>
-                        <h3>A little about myself.</h3>
+                        <h3>A little about me.</h3>
                     </div>
                 </div>
                 <div class="row">
@@ -29,9 +29,9 @@
                     Programming Languages.
                 </h5>
                 <p>C++</p>
-                <p>C# .net</p>
+                <p>C# (.net)</p>
                 <p>Java</p>
-                <p>JavaScript</p>
+                <p>JavaScript (Jquery)</p>
                 <p>PHP</p>
                 <p>SQL</p>
             </div>
