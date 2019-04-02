@@ -126,6 +126,16 @@ $("a[href^='#']").click(function(e) {
     });
 }(jQuery));
 
+//Set captcha numbers on page load
+var captchaFirstInt = Math.floor(Math.random() * 10);
+var captchaSecondInt = Math.floor(Math.random() * 10);
+var captcha = captchaFirstInt.toString() + " + " + captchaSecondInt.toString() + " = "
+
+$(window).ready(function() {
+    $('input[name=captcha]').attr("placeholder", captcha);
+    $('label[for=captcha]').text(captcha);
+});
+
 //Validate contact form then submit it
 function validateForm() {
     document.getElementById('status').innerHTML = "Sending...";
@@ -135,7 +145,8 @@ function validateForm() {
         'email'    : $('input[name=email]').val(),
         'subject'  : $('input[name=subject]').val(),
         'message'  : $('textarea[name=message]').val(),
-        'captcha'  : $('input[name=captcha]').val()
+        'captcha'  : $('input[name=captcha]').val(),
+        'captchaValue'  : captchaFirstInt + captchaSecondInt
     };
 
 
