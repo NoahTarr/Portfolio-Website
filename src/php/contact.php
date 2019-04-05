@@ -75,8 +75,8 @@
                         <div class="row">
                             <div class="col-md-3">
                                 <div class="md-form form-group form-label-group">
-                                    <input type="text" id="captcha" name="captcha" class="form-control-plaintext" placeholder="1 + 2 =">
-                                    <label for="captcha">1 + 2 =</label>
+                                    <input type="text" id="captcha" name="captcha" class="form-control-plaintext" placeholder="">
+                                    <label for="captcha"></label>
                                 </div>
                             </div>
                         </div>
