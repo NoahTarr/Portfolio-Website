@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en">
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-137825370-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-137825370-1');
+    </script>
+
     <meta charset="UTF-8">
     <title>Noah Tarr</title>
     <meta http-equiv="x-ua-compatible" content="ie=edge">
