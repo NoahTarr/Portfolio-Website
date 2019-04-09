@@ -90,34 +90,13 @@ svg {
 //*********************
 //tentacles
 //*********************
+
 #tentacle1 {
   position: absolute;
   left: -250px;
   top: 100%;
   z-index: 100;
 }
-
-#tentacle2 {
-  position: absolute;
-  right: -200px;
-  top: 200%;
-  z-index: 100;
-}
-
-#tentacle3 {
-  position: absolute;
-  left: -200px;
-  top: 300%;
-  z-index: 100;
-}
-
-#tentacle4 {
-  position: absolute;
-  right: -50px;
-  top: 400%;
-  z-index: 100;
-}
-
 //tentacle1 Media Queries
 @media (max-width: 1730px) {
   #tentacle1 {
@@ -136,7 +115,7 @@ svg {
 }
 @media (max-width: 1200px) {
   #tentacle1 {
-    display: block;
+    display: initial;
   }
 }
 @media (max-width: 1140px) {
@@ -146,18 +125,22 @@ svg {
 }
 @media (max-width: 992px) {
   #tentacle1 {
-    display: block;
+    display: initial;
   }
 }
-@media (max-width: map_get($grid-breakpoints, md)) {
+@media (max-width: 880px) {
   #tentacle1 {
-    display: none;
-  }
-  #scrollArrow {
     display: none;
   }
 }
 
+
+#tentacle2 {
+  position: absolute;
+  right: -200px;
+  top: 200%;
+  z-index: 100;
+}
 //tentacle2 Media Queries
 @media (max-width: 1681px) {
   #tentacle2 {
@@ -191,6 +174,137 @@ svg {
 }
 @media (max-width: 933px) {
   #tentacle2 {
+    display: none;
+  }
+}
+
+
+#tentacle3 {
+  position: absolute;
+  left: -200px;
+  top: 300%;
+  z-index: 100;
+}
+//tentacle3 media queries
+@media (max-width: 1540px) {
+  #tentacle3 {
+    left: -250px;
+  }
+}
+@media (max-width: 1440px) {
+  #tentacle3 {
+    left: -300px;
+  }
+}
+@media (max-width: 1350px) {
+  #tentacle3 {
+    left: -350px;
+  }
+}
+@media (max-width: 1240px) {
+  #tentacle3 {
+    display: none;
+  }
+}
+@media (max-width: 1199px)
+{
+  #tentacle3 {
+    display: initial;
+    left: -300px;
+  }
+}
+@media (max-width: 1150px)
+{
+  #tentacle3 {
+    left: -350px;
+  }
+}
+@media (max-width: 1060px)
+{
+  #tentacle3 {
+    display: none;
+  }
+}
+@media (max-width: 990px)
+{
+  #tentacle3 {
+    display: initial;
+    left: -300px;
+  }
+}
+@media (max-width: 920px)
+{
+  #tentacle3 {
+    left: -350px;
+  }
+}
+@media (max-width: 820px)
+{
+  #tentacle3 {
+    display: none;
+  }
+}
+
+#tentacle4 {
+  position: absolute;
+  right: -50px;
+  top: 400%;
+  z-index: 100;
+}
+//tentacle4 media queries
+@media (max-width: 1540px)
+{
+  #tentacle4 {
+    right: -100px;
+  }
+}
+@media (max-width: 1440px)
+{
+  #tentacle4 {
+    right: -150px;
+  }
+}
+@media (max-width: 1440px)
+{
+  #tentacle4 {
+    right: -200px;
+  }
+}
+@media (max-width: 1240px)
+{
+  #tentacle4 {
+    display: none;
+  }
+}
+@media (max-width: 1199px)
+{
+  #tentacle4 {
+    display: initial;
+  }
+}
+@media (max-width: 1060px)
+{
+  #tentacle4 {
+    display: none;
+  }
+}
+@media (max-width: 990px)
+{
+  #tentacle4 {
+    display: initial;
+    right: -150px;
+  }
+}
+@media (max-width: 920px)
+{
+  #tentacle4 {
+    display: initial;
+    right: -200px;
+  }
+}
+@media (max-width: 820px)
+{
+  #tentacle4 {
     display: none;
   }
 }
@@ -264,6 +378,12 @@ h2 {
   //top: -100px;
 }
 
+@media (max-width: map_get($grid-breakpoints, md)) {
+  #scrollArrow {
+    display: none;
+  }
+}
+
 #mugAndTentacle {
   width: 815px;
   height: 715px;
@@ -280,6 +400,8 @@ h2 {
   #mugAndTentacle {
     width: 1223px;
     height: 1073px;
+    position: relative;
+    left: -100px;
   }
 }
 
@@ -512,8 +634,8 @@ label {
   color: transparent;
 }
 
-.form-label-group textarea::-ms-input-placeholder,
-.form-label-group input::-ms-input-placeholder {
+.form-label-group textarea:-ms-input-placeholder,
+.form-label-group input:-ms-input-placeholder {
   color: transparent;
 }
 

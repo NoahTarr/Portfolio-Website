@@ -105,7 +105,7 @@
                         </li>
                         <li class="mt-lg-3 mt-md-2">
                             <i id="iconLarge" class="material-icons iconLarge">account_box</i>
-                            <p>Peak at my <a href="/../resume.pdf" target="_blank">Resume</a></p>
+                            <p>Peek at my <a href="/../resume.pdf" target="_blank">Resume</a></p>
                         </li>
                     </ul>
                 </div>
