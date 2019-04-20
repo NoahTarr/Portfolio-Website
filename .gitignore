@@ -5,8 +5,10 @@ package.json
 package-lock.json
 src/assets
 src/fonts
+*.ttf
 src/css/bootstrap.css
 src/js/jquery-drawsvg-master
 src/js/bootstrap.min.js
 src/js/jquery.min.js
 src/js/popper.min.js
+src/js/jquery.drawsvg.min.js

@@ -52,7 +52,13 @@ $(window).resize(function()
     }
 });
 
+//Force scroll to top when page is loaded
+window.scrollTo(0, 0);
+
 $(window).ready(function(){
+    //Preloading screen fade out
+    $('.preloader').fadeOut('slow');
+
     //Set height of landing section so it takes of the full screen when opened
     landingContainerMain.css('height', windowHeight);
 
@@ -86,6 +92,22 @@ $(window).ready(function(){
     //Set captcha numbers on page load
     $('input[name=captcha]').attr("placeholder", captcha);
     $('label[for=captcha]').text(captcha);
+
+    var mySVG = $('svg').drawsvg();
+    mySVG.drawsvg('animate');
+
+    // var mySVG = $('#timelineLarge').drawsvg();
+    // mySVG.drawsvg('animate');
+
+    // var $doc = $(document),
+    //     $win = $(window),
+    //     $svg = $('#timeline').drawsvg(),
+    //     max = $doc.height() - $win.height();
+    //
+    // $win.on('scroll', function() {
+    //     var p = $win.scrollTop() / max;
+    //     $svg.drawsvg('progress', p);
+    // });
 });
 
 

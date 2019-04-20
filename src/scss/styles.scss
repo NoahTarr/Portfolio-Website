@@ -23,6 +23,19 @@ $theme-colors: (
 
 
 //*********************
+//Fonts
+//*********************
+@font-face {
+  font-family: "Ink Free";
+  src: url("../fonts/InkFree.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Caviar Dreams";
+  src: url("../fonts/CaviarDreams.ttf") format("truetype");
+}
+
+//*********************
 //Navbar
 //*********************
 nav > *:focus, nav > *:active {
@@ -72,6 +85,25 @@ nav > *:focus, nav > *:active {
 
 
 //*********************
+//Images
+//*********************
+#aboutImage {
+  height: 350px;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+}
+
+@media (max-width: 415px) {
+  #aboutImage {
+    height: 250px;
+  }
+}
+
+
+
+
+//*********************
 //Main Body Elements
 //*********************
 body {
@@ -85,6 +117,19 @@ html, body {
 svg {
   @include unselectable();
   pointer-events: none;
+}
+
+.preloader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background-image: url("../assets/loadingSymbol2.svg");
+  background-repeat: no-repeat;
+  background-color: map-get($theme-colors, light);
+  background-position: center;
 }
 
 //*********************
@@ -312,17 +357,6 @@ svg {
 //*********************
 //typography
 //*********************
-//fonts
-@font-face {
-  font-family: "Ink Free";
-  src: url("../fonts/InkFree.woff") format("woff");
-}
-
-@font-face {
-  font-family: "Caviar Dreams";
-  src: url("../fonts/CaviarDreams.ttf") format("truetype");
-}
-
 h1 {
   @include unselectable();
   font-family: "Ink Free";
@@ -376,12 +410,6 @@ h2 {
 #landingContainerMain {
   position: relative;
   //top: -100px;
-}
-
-@media (max-width: map_get($grid-breakpoints, md)) {
-  #scrollArrow {
-    display: none;
-  }
 }
 
 #mugAndTentacle {
@@ -479,6 +507,20 @@ h2 {
   }
 }
 
+@media (max-width: 992px) {
+  #about {
+    padding-top: 150px;
+    padding-bottom: 150px;
+  }
+}
+
+@media (max-width: 575px) {
+  #about {
+    padding-top: 75px;
+    padding-bottom: 50px;
+  }
+}
+
 @media (max-width: map_get($grid-breakpoints, sm)) {
   #about {
     -webkit-clip-path: initial;
@@ -491,6 +533,17 @@ h2 {
   padding-top: 75px;
   padding-bottom: 75px;
   min-height: 500px;
+}
+
+@media (max-width: 992px) {
+  #contact {
+    padding-top: 0;
+  }
+}
+@media (max-width: 576px) {
+  #contact {
+    padding-top: 75px;
+  }
 }
 
 
@@ -516,6 +569,12 @@ h2 {
   }
 }
 
+@media (max-width: 315px) {
+  #about, #contact, #timeline {
+    padding-top: 100px;
+  }
+}
+
 #timelineSVG {
   margin-top: 5em;
 }
@@ -535,30 +594,6 @@ h2 {
 //*********************
 //Contact Form
 //*********************
-//Reset some styles from bootstrap
-textarea:focus,
-textarea.form-control:focus,
-input.form-control:focus,
-input[type=text]:focus,
-input[type=password]:focus,
-input[type=email]:focus,
-input[type=number]:focus,
-[type=text].form-control:focus,
-[type=password].form-control:focus,
-[type=email].form-control:focus,
-[type=tel].form-control:focus,
-[contenteditable].form-control:focus {
-  background-color: initial;
-  -webkit-box-shadow: initial;
-  -moz-box-shadow: initial;
-  box-shadow: none !important;
-  outline: 0 !important;
-}
-
-.form-control {
-  background-color: initial;
-}
-
 .form-label-group input,
 .form-label-group textarea{
   border-bottom: solid 2px map_get($theme-colors, dark);
@@ -567,10 +602,6 @@ input[type=number]:focus,
 .form-label-group input:focus,
 .form-label-group textarea:focus {
   border-bottom: solid 2px map_get($theme-colors, primary);
-}
-
-.form-control{
-  border: none;
 }
 
 .btn-primary:hover,.btn-primary:focus,.btn-primary:active,
@@ -590,7 +621,7 @@ label {
   --input-padding-y: .75rem;
 }
 
-.form-control:focus {
+.form-control-plaintext:focus {
   color: map_get($theme-colors, dark) !important;
 }
 

@@ -34,14 +34,13 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
 
-    <!--Draw SVG Library-->
-    <script src="js/jquery-drawsvg-master/src/jquery.drawsvg.js"></script>
-
 
 </head>
 
 <body>
-
+    <!--This loading image came from loading.io; https://loading.io/spinner/double-ring-->
+    <div class="preloader">
+    </div>
     <?php include('php/nav.php') ?>
 
 
@@ -77,5 +76,7 @@
     <?php include("php/timeline.php") ?>
 
     <script src="js/main.js" type="text/javascript"> </script>
+    <!--Draw SVG Library-->
+    <script src="js/jquery.drawsvg.min.js"></script>
 </body>
 </html>
