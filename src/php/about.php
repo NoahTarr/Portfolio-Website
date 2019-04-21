@@ -5,7 +5,7 @@
 
 <div class="container-fluid" id="about">
     <div class="container">
-        <div class="row">
+        <div class="row mb-5">
             <div class="col-lg-6 col-sm-12">
                 <div class="row">
                     <div class="col sectionHeader" id="aboutText">
@@ -19,8 +19,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-6 col-sm-12" id="aboutImage">
-
+            <div class="col">
+                <img id="aboutImage" class="mx-auto d-block" src="../assets/me.jpg"/>
             </div>
         </div>
         <div class="row">

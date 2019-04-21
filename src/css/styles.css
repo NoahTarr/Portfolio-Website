@@ -10191,346 +10191,6 @@ a.text-dark:hover, a.text-dark:focus {
   }
 }
 
-/* line 28, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
-nav > *:focus, nav > *:active {
-  outline: none !important;
-  border: none !important;
-}
-
-/* line 33, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
-#navbar-toggler:focus, #navbar-toggler:hover, #navbar-toggler:active {
-  background-color: #222222 !important;
-}
-
-/* line 37, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
-.navbar-toggler:focus {
-  background: initial;
-}
-
-/* line 41, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
-.nav-item {
-  left: 2em;
-  padding-right: 2em;
-}
-
-/* line 46, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
-.nav-link {
-  color: #fff !important;
-  opacity: .6 !important;
-}
-
-/* line 52, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
-.navbar-brand {
-  font-family: "Caviar Dreams";
-  font-size: 20pt !important;
-}
-
-@media (max-width: 576px) {
-  /* line 58, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
-  .navbar-brand-icon {
-    margin-right: 8px !important;
-  }
-  /* line 61, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
-  .navbar-brand-icon svg {
-    height: 20px;
-    width: 20px;
-  }
-}
-
-/* line 68, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
-.nav-link:hover {
-  opacity: 1 !important;
-  text-decoration: underline !important;
-}
-
-/* line 77, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
-body {
-  background-color: #D6D6D6 !important;
-}
-
-/* line 81, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
-html, body {
-  overflow-x: hidden;
-}
-
-/* line 85, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
-svg {
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  pointer-events: none;
-}
-
-/* line 94, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
-#tentacle1 {
-  position: absolute;
-  left: -250px;
-  top: 100%;
-  z-index: 100;
-}
-
-@media (max-width: 1730px) {
-  /* line 102, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
-  #tentacle1 {
-    left: -350px;
-  }
-}
-
-@media (max-width: 1520px) {
-  /* line 107, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
-  #tentacle1 {
-    left: -450px;
-  }
-}
-
-@media (max-width: 1350px) {
-  /* line 112, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
-  #tentacle1 {
-    display: none;
-  }
-}
-
-@media (max-width: 1200px) {
-  /* line 117, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
-  #tentacle1 {
-    display: initial;
-  }
-}
-
-@media (max-width: 1140px) {
-  /* line 122, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
-  #tentacle1 {
-    display: none;
-  }
-}
-
-@media (max-width: 992px) {
-  /* line 127, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
-  #tentacle1 {
-    display: initial;
-  }
-}
-
-@media (max-width: 880px) {
-  /* line 132, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
-  #tentacle1 {
-    display: none;
-  }
-}
-
-/* line 138, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
-#tentacle2 {
-  position: absolute;
-  right: -200px;
-  top: 200%;
-  z-index: 100;
-}
-
-@media (max-width: 1681px) {
-  /* line 146, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
-  #tentacle2 {
-    right: -300px;
-  }
-}
-
-@media (max-width: 1477px) {
-  /* line 151, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
-  #tentacle2 {
-    right: -400px;
-  }
-}
-
-@media (max-width: 1280px) {
-  /* line 156, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
-  #tentacle2 {
-    display: none;
-  }
-}
-
-@media (max-width: 1200px) {
-  /* line 161, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
-  #tentacle2 {
-    display: initial;
-  }
-}
-
-@media (max-width: 1147px) {
-  /* line 166, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
-  #tentacle2 {
-    display: none;
-  }
-}
-
-@media (max-width: 992px) {
-  /* line 171, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
-  #tentacle2 {
-    display: initial;
-  }
-}
-
-@media (max-width: 933px) {
-  /* line 176, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
-  #tentacle2 {
-    display: none;
-  }
-}
-
-/* line 182, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
-#tentacle3 {
-  position: absolute;
-  left: -200px;
-  top: 300%;
-  z-index: 100;
-}
-
-@media (max-width: 1540px) {
-  /* line 190, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
-  #tentacle3 {
-    left: -250px;
-  }
-}
-
-@media (max-width: 1440px) {
-  /* line 195, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
-  #tentacle3 {
-    left: -300px;
-  }
-}
-
-@media (max-width: 1350px) {
-  /* line 200, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
-  #tentacle3 {
-    left: -350px;
-  }
-}
-
-@media (max-width: 1240px) {
-  /* line 205, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
-  #tentacle3 {
-    display: none;
-  }
-}
-
-@media (max-width: 1199px) {
-  /* line 211, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
-  #tentacle3 {
-    display: initial;
-    left: -300px;
-  }
-}
-
-@media (max-width: 1150px) {
-  /* line 218, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
-  #tentacle3 {
-    left: -350px;
-  }
-}
-
-@media (max-width: 1060px) {
-  /* line 224, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
-  #tentacle3 {
-    display: none;
-  }
-}
-
-@media (max-width: 990px) {
-  /* line 230, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
-  #tentacle3 {
-    display: initial;
-    left: -300px;
-  }
-}
-
-@media (max-width: 920px) {
-  /* line 237, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
-  #tentacle3 {
-    left: -350px;
-  }
-}
-
-@media (max-width: 820px) {
-  /* line 243, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
-  #tentacle3 {
-    display: none;
-  }
-}
-
-/* line 248, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
-#tentacle4 {
-  position: absolute;
-  right: -50px;
-  top: 400%;
-  z-index: 100;
-}
-
-@media (max-width: 1540px) {
-  /* line 257, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
-  #tentacle4 {
-    right: -100px;
-  }
-}
-
-@media (max-width: 1440px) {
-  /* line 263, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
-  #tentacle4 {
-    right: -150px;
-  }
-}
-
-@media (max-width: 1440px) {
-  /* line 269, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
-  #tentacle4 {
-    right: -200px;
-  }
-}
-
-@media (max-width: 1240px) {
-  /* line 275, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
-  #tentacle4 {
-    display: none;
-  }
-}
-
-@media (max-width: 1199px) {
-  /* line 281, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
-  #tentacle4 {
-    display: initial;
-  }
-}
-
-@media (max-width: 1060px) {
-  /* line 287, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
-  #tentacle4 {
-    display: none;
-  }
-}
-
-@media (max-width: 990px) {
-  /* line 293, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
-  #tentacle4 {
-    display: initial;
-    right: -150px;
-  }
-}
-
-@media (max-width: 920px) {
-  /* line 300, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
-  #tentacle4 {
-    display: initial;
-    right: -200px;
-  }
-}
-
-@media (max-width: 820px) {
-  /* line 307, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
-  #tentacle4 {
-    display: none;
-  }
-}
-
 @font-face {
   font-family: "Ink Free";
   src: url("../fonts/InkFree.woff") format("woff");
@@ -10541,7 +10201,376 @@ svg {
   src: url("../fonts/CaviarDreams.ttf") format("truetype");
 }
 
-/* line 326, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
+/* line 41, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
+nav > *:focus, nav > *:active {
+  outline: none !important;
+  border: none !important;
+}
+
+/* line 46, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
+#navbar-toggler:focus, #navbar-toggler:hover, #navbar-toggler:active {
+  background-color: #222222 !important;
+}
+
+/* line 50, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
+.navbar-toggler:focus {
+  background: initial;
+}
+
+/* line 54, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
+.nav-item {
+  left: 2em;
+  padding-right: 2em;
+}
+
+/* line 59, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
+.nav-link {
+  color: #fff !important;
+  opacity: .6 !important;
+}
+
+/* line 65, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
+.navbar-brand {
+  font-family: "Caviar Dreams";
+  font-size: 20pt !important;
+}
+
+@media (max-width: 576px) {
+  /* line 71, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
+  .navbar-brand-icon {
+    margin-right: 8px !important;
+  }
+  /* line 74, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
+  .navbar-brand-icon svg {
+    height: 20px;
+    width: 20px;
+  }
+}
+
+/* line 81, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
+.nav-link:hover {
+  opacity: 1 !important;
+  text-decoration: underline !important;
+}
+
+/* line 90, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
+#aboutImage {
+  height: 350px;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+}
+
+@media (max-width: 415px) {
+  /* line 98, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
+  #aboutImage {
+    height: 250px;
+  }
+}
+
+/* line 109, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
+body {
+  background-color: #D6D6D6 !important;
+}
+
+/* line 113, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
+html, body {
+  overflow-x: hidden;
+}
+
+/* line 117, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
+svg {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  pointer-events: none;
+}
+
+/* line 122, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
+.preloader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background-image: url("../assets/loadingSymbol.svg");
+  background-repeat: no-repeat;
+  background-color: #D6D6D6;
+  background-position: center;
+}
+
+/* line 139, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
+#tentacle1 {
+  position: absolute;
+  left: -250px;
+  top: 100%;
+  z-index: 100;
+}
+
+@media (max-width: 1730px) {
+  /* line 147, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
+  #tentacle1 {
+    left: -350px;
+  }
+}
+
+@media (max-width: 1520px) {
+  /* line 152, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
+  #tentacle1 {
+    left: -450px;
+  }
+}
+
+@media (max-width: 1350px) {
+  /* line 157, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
+  #tentacle1 {
+    display: none;
+  }
+}
+
+@media (max-width: 1200px) {
+  /* line 162, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
+  #tentacle1 {
+    display: initial;
+  }
+}
+
+@media (max-width: 1140px) {
+  /* line 167, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
+  #tentacle1 {
+    display: none;
+  }
+}
+
+@media (max-width: 992px) {
+  /* line 172, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
+  #tentacle1 {
+    display: initial;
+  }
+}
+
+@media (max-width: 880px) {
+  /* line 177, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
+  #tentacle1 {
+    display: none;
+  }
+}
+
+/* line 183, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
+#tentacle2 {
+  position: absolute;
+  right: -200px;
+  top: 200%;
+  z-index: 100;
+}
+
+@media (max-width: 1681px) {
+  /* line 191, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
+  #tentacle2 {
+    right: -300px;
+  }
+}
+
+@media (max-width: 1477px) {
+  /* line 196, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
+  #tentacle2 {
+    right: -400px;
+  }
+}
+
+@media (max-width: 1280px) {
+  /* line 201, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
+  #tentacle2 {
+    display: none;
+  }
+}
+
+@media (max-width: 1200px) {
+  /* line 206, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
+  #tentacle2 {
+    display: initial;
+  }
+}
+
+@media (max-width: 1147px) {
+  /* line 211, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
+  #tentacle2 {
+    display: none;
+  }
+}
+
+@media (max-width: 992px) {
+  /* line 216, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
+  #tentacle2 {
+    display: initial;
+  }
+}
+
+@media (max-width: 933px) {
+  /* line 221, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
+  #tentacle2 {
+    display: none;
+  }
+}
+
+/* line 227, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
+#tentacle3 {
+  position: absolute;
+  left: -200px;
+  top: 300%;
+  z-index: 100;
+}
+
+@media (max-width: 1540px) {
+  /* line 235, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
+  #tentacle3 {
+    left: -250px;
+  }
+}
+
+@media (max-width: 1440px) {
+  /* line 240, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
+  #tentacle3 {
+    left: -300px;
+  }
+}
+
+@media (max-width: 1350px) {
+  /* line 245, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
+  #tentacle3 {
+    left: -350px;
+  }
+}
+
+@media (max-width: 1240px) {
+  /* line 250, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
+  #tentacle3 {
+    display: none;
+  }
+}
+
+@media (max-width: 1199px) {
+  /* line 256, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
+  #tentacle3 {
+    display: initial;
+    left: -300px;
+  }
+}
+
+@media (max-width: 1150px) {
+  /* line 263, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
+  #tentacle3 {
+    left: -350px;
+  }
+}
+
+@media (max-width: 1060px) {
+  /* line 269, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
+  #tentacle3 {
+    display: none;
+  }
+}
+
+@media (max-width: 990px) {
+  /* line 275, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
+  #tentacle3 {
+    display: initial;
+    left: -300px;
+  }
+}
+
+@media (max-width: 920px) {
+  /* line 282, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
+  #tentacle3 {
+    left: -350px;
+  }
+}
+
+@media (max-width: 820px) {
+  /* line 288, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
+  #tentacle3 {
+    display: none;
+  }
+}
+
+/* line 293, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
+#tentacle4 {
+  position: absolute;
+  right: -50px;
+  top: 400%;
+  z-index: 100;
+}
+
+@media (max-width: 1540px) {
+  /* line 302, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
+  #tentacle4 {
+    right: -100px;
+  }
+}
+
+@media (max-width: 1440px) {
+  /* line 308, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
+  #tentacle4 {
+    right: -150px;
+  }
+}
+
+@media (max-width: 1440px) {
+  /* line 314, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
+  #tentacle4 {
+    right: -200px;
+  }
+}
+
+@media (max-width: 1240px) {
+  /* line 320, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
+  #tentacle4 {
+    display: none;
+  }
+}
+
+@media (max-width: 1199px) {
+  /* line 326, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
+  #tentacle4 {
+    display: initial;
+  }
+}
+
+@media (max-width: 1060px) {
+  /* line 332, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
+  #tentacle4 {
+    display: none;
+  }
+}
+
+@media (max-width: 990px) {
+  /* line 338, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
+  #tentacle4 {
+    display: initial;
+    right: -150px;
+  }
+}
+
+@media (max-width: 920px) {
+  /* line 345, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
+  #tentacle4 {
+    display: initial;
+    right: -200px;
+  }
+}
+
+@media (max-width: 820px) {
+  /* line 352, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
+  #tentacle4 {
+    display: none;
+  }
+}
+
+/* line 360, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
 h1 {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -10553,42 +10582,42 @@ h1 {
   font-size: 120pt;
 }
 
-/* line 332, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
+/* line 366, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
 h3 {
   font-family: "Caviar Dreams";
   font-size: 25pt;
 }
 
-/* line 337, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
+/* line 371, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
 h2 {
   font-family: "Caviar Dreams";
   font-size: 28pt;
 }
 
 @media (max-width: 576px) {
-  /* line 342, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
+  /* line 376, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
   h2 {
     font-size: 20pt;
   }
 }
 
-/* line 347, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
+/* line 381, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
 .landingTextContainer {
   vertical-align: bottom;
 }
 
-/* line 351, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
+/* line 385, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
 .landingText {
   position: absolute;
   bottom: 0;
 }
 
-/* line 355, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
+/* line 389, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
 .landingText h2 {
   text-align: center;
 }
 
-/* line 360, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
+/* line 394, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
 .material-icons {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -10600,31 +10629,24 @@ h2 {
   color: #bf6567;
 }
 
-/* line 367, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
+/* line 401, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
 #iconLarge {
   font-size: 24pt;
 }
 
-/* line 376, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
+/* line 410, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
 #landingContainerMain {
   position: relative;
 }
 
-@media (max-width: 768px) {
-  /* line 382, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
-  #scrollArrow {
-    display: none;
-  }
-}
-
-/* line 387, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
+/* line 415, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
 #mugAndTentacle {
   width: 815px;
   height: 715px;
 }
 
 @media (min-width: 1200px) {
-  /* line 393, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
+  /* line 421, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
   #mugAndTentacle {
     width: 978px;
     height: 858px;
@@ -10632,7 +10654,7 @@ h2 {
 }
 
 @media (min-width: 2000px) {
-  /* line 400, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
+  /* line 428, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
   #mugAndTentacle {
     width: 1223px;
     height: 1073px;
@@ -10642,43 +10664,43 @@ h2 {
 }
 
 @media (max-width: 992px) {
-  /* line 409, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
+  /* line 437, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
   #landingContainerMain {
     top: -200px;
   }
 }
 
 @media (max-width: 768px) {
-  /* line 415, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
+  /* line 443, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
   #mugAndTentacle {
     height: 600px;
     width: 572px;
   }
-  /* line 419, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
+  /* line 447, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
   #smallLandingDesc {
     margin: 0;
   }
 }
 
-/* line 424, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
+/* line 452, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
 #smallLandingDesc {
   margin: 3rem;
 }
 
-/* line 432, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
+/* line 460, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
 .sectionHeader {
   height: 150px;
   margin-bottom: 50px;
   display: block;
 }
 
-/* line 437, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
+/* line 465, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
 .sectionHeader h1 {
   color: #aaa;
   position: absolute;
 }
 
-/* line 442, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
+/* line 470, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
 .sectionHeader h3 {
   color: #000;
   position: absolute;
@@ -10686,22 +10708,22 @@ h2 {
 }
 
 @media (max-width: 576px) {
-  /* line 451, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
+  /* line 479, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
   .sectionHeader {
     height: initial;
   }
-  /* line 454, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
+  /* line 482, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
   h1 {
     display: none;
   }
-  /* line 457, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
+  /* line 485, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
   h3 {
     position: initial;
     font-weight: bold;
   }
 }
 
-/* line 464, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
+/* line 492, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
 #about {
   padding-top: 75px;
   padding-bottom: 100px;
@@ -10712,32 +10734,62 @@ h2 {
   clip-path: polygon(0 14%, 100% 0%, 100% 97%, 0 91%);
 }
 
-/* line 473, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
+/* line 501, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
 #about h1 {
   color: #333;
 }
 
-/* line 477, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
+/* line 505, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
 #about h3 {
   color: #fff;
 }
 
+@media (max-width: 992px) {
+  /* line 511, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
+  #about {
+    padding-top: 150px;
+    padding-bottom: 150px;
+  }
+}
+
+@media (max-width: 575px) {
+  /* line 518, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
+  #about {
+    padding-top: 75px;
+    padding-bottom: 50px;
+  }
+}
+
 @media (max-width: 576px) {
-  /* line 483, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
+  /* line 525, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
   #about {
     -webkit-clip-path: initial;
     clip-path: initial;
   }
 }
 
-/* line 490, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
+/* line 532, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
 #contact {
   padding-top: 75px;
   padding-bottom: 75px;
   min-height: 500px;
 }
 
-/* line 497, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
+@media (max-width: 992px) {
+  /* line 539, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
+  #contact {
+    padding-top: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  /* line 544, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
+  #contact {
+    padding-top: 75px;
+  }
+}
+
+/* line 550, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
 #timeline {
   padding-top: 75px;
   padding-bottom: 75px;
@@ -10748,82 +10800,59 @@ h2 {
   clip-path: polygon(37% 80px, 100% 0, 100% 100%, 0 100%, 0 0);
 }
 
-/* line 506, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
+/* line 559, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
 #timeline h1 {
   color: #333;
 }
 
-/* line 510, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
+/* line 563, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
 #timeline h3 {
   color: #fff;
 }
 
-/* line 514, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
+/* line 567, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
 #timeline svg {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
 }
 
-/* line 519, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
+@media (max-width: 315px) {
+  /* line 573, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
+  #about, #contact, #timeline {
+    padding-top: 100px;
+  }
+}
+
+/* line 578, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
 #timelineSVG {
   margin-top: 5em;
 }
 
 @media (max-width: 576px) {
-  /* line 524, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
+  /* line 583, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
   #timeline {
     -webkit-clip-path: initial;
     clip-path: initial;
   }
-  /* line 529, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
+  /* line 588, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
   #timelineSVG {
     margin-top: 0;
   }
 }
 
-/* line 539, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
-textarea:focus,
-textarea.form-control:focus,
-input.form-control:focus,
-input[type=text]:focus,
-input[type=password]:focus,
-input[type=email]:focus,
-input[type=number]:focus,
-[type=text].form-control:focus,
-[type=password].form-control:focus,
-[type=email].form-control:focus,
-[type=tel].form-control:focus,
-[contenteditable].form-control:focus {
-  background-color: initial;
-  -webkit-box-shadow: initial;
-  -moz-box-shadow: initial;
-  box-shadow: none !important;
-  outline: 0 !important;
-}
-
-/* line 558, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
-.form-control {
-  background-color: initial;
-}
-
-/* line 562, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
+/* line 597, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
 .form-label-group input,
 .form-label-group textarea {
   border-bottom: solid 2px #222222;
   color: #222222;
 }
 
-/* line 567, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
+/* line 602, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
 .form-label-group input:focus,
 .form-label-group textarea:focus {
   border-bottom: solid 2px #bf6567;
 }
 
-/* line 572, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
-.form-control {
-  border: none;
-}
-
-/* line 576, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
+/* line 607, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active,
 .btn-primary:active:focus:not(:disabled):not(.disabled),
 .btn:focus, .btn:active, .btn:hover {
@@ -10831,7 +10860,7 @@ input[type=number]:focus,
   outline: 0;
 }
 
-/* line 583, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
+/* line 614, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
 label {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -10841,24 +10870,24 @@ label {
   user-select: none;
 }
 
-/* line 588, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
+/* line 619, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
 :root {
   --input-padding-x: .75rem;
   --input-padding-y: .75rem;
 }
 
-/* line 593, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
-.form-control:focus {
+/* line 624, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
+.form-control-plaintext:focus {
   color: #222222 !important;
 }
 
-/* line 597, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
+/* line 628, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
 .form-label-group {
   position: relative;
   margin-bottom: 1rem;
 }
 
-/* line 602, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
+/* line 633, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
 .form-label-group > input,
 .form-label-group > textarea,
 .form-label-group > label {
@@ -10866,7 +10895,7 @@ label {
   cursor: text !important;
 }
 
-/* line 609, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
+/* line 640, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
 .form-label-group > label {
   position: absolute;
   top: 0;
@@ -10886,37 +10915,37 @@ label {
   transition: all .1s ease-in-out, color 0s;
 }
 
-/* line 627, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
+/* line 658, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
 .form-label-group textarea::-webkit-input-placeholder,
 .form-label-group input::-webkit-input-placeholder {
   color: transparent;
 }
 
-/* line 632, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
+/* line 663, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
 .form-label-group textarea:-ms-input-placeholder,
 .form-label-group input:-ms-input-placeholder {
   color: transparent;
 }
 
-/* line 637, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
+/* line 668, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
 .form-label-group textarea:-ms-input-placeholder,
 .form-label-group input:-ms-input-placeholder {
   color: transparent;
 }
 
-/* line 642, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
+/* line 673, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
 .form-label-group textarea::-moz-placeholder,
 .form-label-group input::-moz-placeholder {
   color: transparent;
 }
 
-/* line 647, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
+/* line 678, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
 .form-label-group textarea::placeholder,
 .form-label-group input::placeholder {
   color: transparent;
 }
 
-/* line 652, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
+/* line 683, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
 .form-label-group textarea:placeholder-shown:focus ~ label,
 .form-label-group input:placeholder-shown:focus ~ label {
   color: #bf6567 !important;
@@ -10927,14 +10956,14 @@ label {
   transition: none;
 }
 
-/* line 662, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
+/* line 693, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
 .form-label-group textarea:not(:placeholder-shown),
 .form-label-group input:not(:placeholder-shown) {
   padding-top: calc(var(--input-padding-y) + var(--input-padding-y) * (2 / 3));
   padding-bottom: calc(var(--input-padding-y) / 3);
 }
 
-/* line 668, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
+/* line 699, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
 .form-label-group textarea:not(:placeholder-shown) ~ label,
 .form-label-group input:not(:placeholder-shown) ~ label {
   padding-top: calc(var(--input-padding-y) / 3);
@@ -10942,18 +10971,18 @@ label {
   font-size: 12px;
 }
 
-/* line 675, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
+/* line 706, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
 .form-label-group textarea:not(:placeholder-shown):focus ~ label,
 .form-label-group input:not(:placeholder-shown):focus ~ label {
   color: #bf6567 !important;
 }
 
-/* line 683, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
+/* line 714, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
 .noUnderline {
   text-decoration: none !important;
 }
 
-/* line 687, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
+/* line 718, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
 .unselectable {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -10963,7 +10992,7 @@ label {
   user-select: none;
 }
 
-/* line 696, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
+/* line 727, C:/Users/noaht/Google Drive/Noahs Portfolio Website/NEW - 6-5-18/Core/src/scss/styles.scss */
 .m-t-5 {
   margin-top: 5em;
 }

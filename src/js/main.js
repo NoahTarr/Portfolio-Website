@@ -52,7 +52,13 @@ $(window).resize(function()
     }
 });
 
+//Force scroll to top when page is loaded
+window.scrollTo(0, 0);
+
 $(window).ready(function(){
+    //Preloading screen fade out
+    $('.preloader').fadeOut('slow');
+
     //Set height of landing section so it takes of the full screen when opened
     landingContainerMain.css('height', windowHeight);
 
@@ -122,7 +128,7 @@ function changeLandingImage() {
 //Misc Functions
 //****************
 
-//Force mobile nav menu to minimize on click
+//Force nav menu to minimize on click
 $('.nav-item').on('click', function(){
     // if (windowWidth <= grid_breakpoints['sm']) {
         $('.navbar-toggler').click(); //bootstrap 4.x
