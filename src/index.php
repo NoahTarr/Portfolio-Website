@@ -76,7 +76,5 @@
     <?php include("php/timeline.php") ?>
 
     <script src="js/main.js" type="text/javascript"> </script>
-    <!--Draw SVG Library-->
-    <script src="js/jquery.drawsvg.min.js"></script>
 </body>
 </html>

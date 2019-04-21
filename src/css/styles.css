@@ -10297,7 +10297,7 @@ svg {
   width: 100%;
   height: 100%;
   z-index: 9999;
-  background-image: url("../assets/loadingSymbol2.svg");
+  background-image: url("../assets/loadingSymbol.svg");
   background-repeat: no-repeat;
   background-color: #D6D6D6;
   background-position: center;

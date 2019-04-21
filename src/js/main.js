@@ -92,22 +92,6 @@ $(window).ready(function(){
     //Set captcha numbers on page load
     $('input[name=captcha]').attr("placeholder", captcha);
     $('label[for=captcha]').text(captcha);
-
-    var mySVG = $('svg').drawsvg();
-    mySVG.drawsvg('animate');
-
-    // var mySVG = $('#timelineLarge').drawsvg();
-    // mySVG.drawsvg('animate');
-
-    // var $doc = $(document),
-    //     $win = $(window),
-    //     $svg = $('#timeline').drawsvg(),
-    //     max = $doc.height() - $win.height();
-    //
-    // $win.on('scroll', function() {
-    //     var p = $win.scrollTop() / max;
-    //     $svg.drawsvg('progress', p);
-    // });
 });
 
 
@@ -144,7 +128,7 @@ function changeLandingImage() {
 //Misc Functions
 //****************
 
-//Force mobile nav menu to minimize on click
+//Force nav menu to minimize on click
 $('.nav-item').on('click', function(){
     // if (windowWidth <= grid_breakpoints['sm']) {
         $('.navbar-toggler').click(); //bootstrap 4.x
