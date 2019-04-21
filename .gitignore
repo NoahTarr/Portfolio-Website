@@ -1,0 +1,10 @@
+.idea/
+node_modules/
+src/assets/
+src/fonts/
+src/css/bootstrap.css
+src/js/jquery-drawsvg-master
+bootstrap.min.js
+jquery.drawsvg.min.js
+jquery.min.js
+popper.min.js
