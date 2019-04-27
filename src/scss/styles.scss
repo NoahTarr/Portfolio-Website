@@ -457,6 +457,14 @@ h2 {
 //*********************
 //Containers
 //*********************
+
+//*****ALL*****//
+@media (max-width: 315px) {
+  #about, #contact, #timelineContainer {
+    padding-top: 100px;
+  }
+}
+
 .sectionHeader {
   height: 150px;
   margin-bottom: 50px;
@@ -489,6 +497,7 @@ h2 {
 }
 
 
+//*****ABOUT*****//
 #about {
   padding-top: 75px;
   padding-bottom: 100px;
@@ -529,6 +538,7 @@ h2 {
 }
 
 
+//*****CONTACT*****//
 #contact {
   padding-top: 75px;
   padding-bottom: 75px;
@@ -546,8 +556,8 @@ h2 {
   }
 }
 
-
-#timeline {
+//*****TIMELINE*****//
+#timelineContainer {
   padding-top: 75px;
   padding-bottom: 75px;
   min-height: 500px;
@@ -563,32 +573,69 @@ h2 {
   h3 {
     color: #fff;
   }
+}
 
-  svg {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
+#timeline {
+  padding-top: 50px;
+
+  .row {
+    min-height: 400px;
+  }
+
+  img {
+    width: 200px;
+    z-index: 999;
   }
 }
 
-@media (max-width: 315px) {
-  #about, #contact, #timeline {
-    padding-top: 100px;
-  }
+.timelineText {
+  font-size: 13pt;
+  width: 220px;
 }
 
-#timelineSVG {
-  margin-top: 5em;
+@media (max-width: map_get($grid-breakpoints, lg))
+{
+  #timeline {
+    .row {
+      min-height: 300px;
+    }
+
+    img {
+      max-width: 150px;
+    }
+  }
+  .timelineText {
+    font-size: 11pt;
+    width: 100%;
+  }
+}
+@media (max-width: map_get($grid-breakpoints, md))
+{
+  #timeline img {
+    max-width: 100%;
+  }
+  .timelineText {
+    font-size: 10pt;
+  }
 }
 
 @media (max-width: map_get($grid-breakpoints, sm)) {
-  #timeline {
+  #timelineContainer {
     -webkit-clip-path: initial;
     clip-path: initial;
   }
 
-  #timelineSVG {
-    margin-top: 0;
+  #timeline {
+    padding-top: 0;
   }
 }
+
+@media (max-width: 400px) {
+  .timelineText {
+    font-size: 8pt;
+  }
+}
+
 
 
 //*********************
@@ -728,3 +775,26 @@ label {
   margin-top: 5em;
 }
 
+.left0 {
+  left: 0;
+}
+
+.right0 {
+  right: 0;
+}
+
+.line {
+  position: absolute;
+  height: 2px;
+  width: 50%;
+  top: 50%;
+  background-color: $white;
+}
+
+.verticalLine {
+  position: absolute;
+  left: 50%;
+  width: 2px;
+  height: 100%;
+  background-color: $white;
+}
