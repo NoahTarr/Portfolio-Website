@@ -32,7 +32,7 @@
                 <a class="nav-link" href="#contact">Contact</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#timeline">Timeline</a>
+                <a class="nav-link" href="#timelineContainer">Timeline</a>
             </li>
         </ul>
     </div>
