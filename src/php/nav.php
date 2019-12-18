@@ -1,9 +1,3 @@
-<!--
- User: noaht
- Date: 3/24/2019
--->
-
-
 <nav class="navbar fixed-top navbar-dark bg-dark unselectable">
     <a class="navbar-brand navbar-brand-icon text-light"  href="https://www.linkedin.com/in/noah-tarr-04834b133/" target="_blank">
         <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25"><title>linkedIn</title><path d="M576.48,597.07h20.75s0,0,0,0a2.43,2.43,0,0,1,2,1.82c0,.08,0,.18.08.24V620s0,0-.05.07a2.5,2.5,0,0,1-2.67,2H577a2.5,2.5,0,0,1-2.66-2.65q0-9.82,0-19.64c0-.1,0-.2,0-.29a2.51,2.51,0,0,1,1.76-2.3A.84.84,0,0,0,576.48,597.07Zm11.07,11.33c0-.4,0-.74,0-1.08,0-.16,0-.21-.2-.21h-2.44c-.15,0-.19,0-.19.19q0,4.58,0,9.15c0,.18.07.21.22.2.83,0,1.66,0,2.49,0,.21,0,.25-.05.25-.25,0-1.66,0-3.32,0-5a2.13,2.13,0,0,1,.38-1.29,1.59,1.59,0,0,1,1.66-.63,1.41,1.41,0,0,1,1.16,1,2.75,2.75,0,0,1,.12.89c0,1.65,0,3.3,0,5,0,.21.06.25.26.25.84,0,1.68,0,2.51,0,.17,0,.22,0,.21-.21,0-2,0-3.94,0-5.91a5,5,0,0,0-.14-1.23A3,3,0,0,0,591.7,607a4.49,4.49,0,0,0-2-.08A3.26,3.26,0,0,0,587.56,608.41Zm-4.69,3.49c0-1.5,0-3,0-4.51,0-.16,0-.23-.2-.23q-1.29,0-2.59,0c-.16,0-.18.05-.18.2q0,4.56,0,9.12c0,.15,0,.19.19.19.85,0,1.71,0,2.56,0,.19,0,.23-.05.23-.23C582.86,614.92,582.86,613.41,582.86,611.9Zm-3.22-7.81a1.73,1.73,0,0,0,3.47,0,1.73,1.73,0,1,0-3.47,0Z" transform="translate(-574.38 -597.07)" fill="#d6d6d6"/></svg>
@@ -29,10 +23,13 @@
                 <a class="nav-link" href="#about">About</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#contact">Contact</a>
+                <a class="nav-link" href="#portfolio">Portfolio</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#timelineContainer">Timeline</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
             </li>
         </ul>
     </div>

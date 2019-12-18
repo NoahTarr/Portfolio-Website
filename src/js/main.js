@@ -54,7 +54,7 @@ $(window).resize(function()
 });
 
 //Force scroll to top when page is loaded
-window.scrollTo(0, 0);
+// window.scrollTo(0, 0);
 
 $(window).ready(function(){
     //Preloading screen fade out

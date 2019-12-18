@@ -1,8 +1,3 @@
-<!--
- User: noaht
- Date: 3/24/2019
--->
-
 <div class="container-fluid" id="about">
     <div class="container">
         <div class="row mb-5">
