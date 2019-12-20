@@ -1,8 +1,3 @@
-<!--
- User: noaht
- Date: 3/24/2019
--->
-
 <div class="container-fluid" id="timelineContainer">
     <div class="container">
         <div class="row">
@@ -44,7 +39,9 @@
             <div class="row">
                 <div class="col d-flex justify-content-end align-items-center">
                     <p class="timelineText">I moved to Santa Rosa,
-                        California after graduating high school and began attending Santa Rosa Junior College. I was there for my first three years of college. I killed it!</p>
+                        California after graduating high school and began attending Santa Rosa Junior College.
+                        I was there for my first three years of college. While attending I was part of the Engineering, CS, and Math clubs.
+                        I also tutored Math, Physics, and CS in the SRJC Tutorial Center.</p>
                 </div>
                 <div class="col d-flex justify-content-center align-content-center">
                     <img class="mx-auto d-block" src="../assets/timeline/SRJC.svg"/>
@@ -63,19 +60,18 @@
                     <div class="verticalLine d-none d-sm-table-cell"></div>
                 </div>
                 <div class="col d-flex justify-content-start align-items-center">
-                    <p class="timelineText mr-auto">I got my first summer
-                        internship at Keysight
+                    <p class="timelineText mr-auto">I received my first summer internship at Keysight
                         Technologies. My intern project was to design and build a website for my team that was used to distribute
                         calibration software to
                         companies around the globe. After my internship I was hired part time and I remained here until I
-                        transfered.</p>
+                        transferred.</p>
                 </div>
             </div>
 
 <!--            DAVIS-->
             <div class="row">
                 <div class="col d-flex justify-content-end align-items-center">
-                    <p class="timelineText ml-auto">I was accepted into the UC Davis School of Engineering with a major in Computer Engineering. Currently, I plan to finish my bachelors of engineering here and then persue a graduate degree.</p>
+                    <p class="timelineText ml-auto">I was accepted into the UC Davis School of Engineering with a major in Computer Engineering. Currently, I plan to finish my BS in Computer Engineering here and then persue a graduate degree.</p>
                 </div>
                 <div class="col d-flex justify-content-center align-content-center">
                     <img class="mx-auto d-block" src="../assets/timeline/UCDavis.svg"/>
