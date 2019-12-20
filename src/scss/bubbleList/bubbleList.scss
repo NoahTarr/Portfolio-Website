@@ -13,8 +13,8 @@ $radius: 130px;
 
 //Base bubble
 $baseDiameter: 125px;
-$baseBorderRadius: 50%;
-$borderWidth: 1px;
+$baseBorderRadius: 500px;
+$borderWidth: 0;
 $borderStyle: solid;
 $borderColor: #222;
 $baseOpacity: .6;
@@ -28,7 +28,7 @@ $backgroundImageOpacityHovered: 1;
 $activeDiameter: 350px;
 $activeWidth: 450px;
 $activeHeight: 301px;
-$activeBorderRadius: 2%;
+$activeBorderRadius: 500px;
 $activeBackgroundColor: #ffffff;
 $activeBorderWidth: 1px;
 $activeBorderStyle: solid;
@@ -51,12 +51,12 @@ $distanceFromSquareToDiameter: ($activeDiameter/2) - ($centerSquareSideLength/2)
 //******You can change these to your liking
 //Banner
 $banner: true;
-$bannerBackgroundColor: #222;
+$bannerBackgroundOpacity: 0;
 $bannerHeight: 40px;
 $headerWidth: 100px; //Set to a number greater then the diameter of the bubble to have banner cutoff at ends
 $bannerTitleFont: "Caviar Dreams";
 $bannerFontSize: 20pt;
-$bannerFontColor: #ffffff;
+$bannerFontColor: #222;
 
 //Header
 $header: true;
@@ -64,8 +64,8 @@ $headerBackgroundColor: #222;
 $headerHeight: $distanceFromSquareToDiameter;
 $headerWidth: 100%; //Set to a number greater then the diameter of the bubble to have banner cutoff at ends
 $headerFont: "Caviar Dreams";
-$headerFontSize: 13pt;
-$headerFontColor: #ffffff;
+$headerFontSize: 14pt;
+$headerFontColor: #000;
 
 //Footer
 $footer: true;
@@ -78,7 +78,7 @@ $footerFontColor: #ffffff;
 
 //Description
 $descriptionFont: inherit;
-$descriptionFontSize: 11pt;
+$descriptionFontSize: 10pt;
 $descriptionFontColor: #000000;
 
 //Empty bubble
@@ -151,6 +151,12 @@ Bubble List Style
   -ms-transition: ease-in-out .1s, transform 0s;
   -o-transition: ease-in-out .1s, transform 0s;
   transition: ease-in-out .1s, transform 0s;
+}
+
+@media (max-width: 1024px) {
+  .bubble {
+    opacity: 1;
+  }
 }
 
 .bubble:hover, .hoveredBubble {
@@ -227,7 +233,6 @@ Bubble List Style
   line-height: $bannerHeight;
   font-size: $bannerFontSize;
   font-family: $bannerTitleFont, sans-serif;
-  background-color: $bannerBackgroundColor;
   color: $bannerFontColor;
   text-align: center;
   white-space: nowrap;
@@ -312,37 +317,48 @@ Bubble List Style
 
 
 .bubbleHeader {
-  position: absolute;
   display: none;
-  flex-flow: wrap-reverse;
-  background-color: $headerBackgroundColor;
-  height: $headerHeight;
-  width: $headerWidth;
+  position: absolute;
+  justify-content: center;
+  //background-color: $headerBackgroundColor;
+  //height: $headerHeight;
+  width: 100%;
   font-family: $headerFont;
   font-size: $headerFontSize;
   color: $headerFontColor;
 
   p {
-    margin-left: 40px;
-    margin-bottom: 5px;
-    height: $headerFontSize;
+    margin: 5px 0;
   }
 }
 
 .bubbleDescription {
   display: none;
   flex-direction: column;
+  width: $activeWidth;
+  height: $activeHeight;
+  justify-content: center;
   position: absolute;
   font-family: $descriptionFont;
   font-size: $descriptionFontSize;
   color: $descriptionFontColor;
-  margin-top: ($bannerHeight+5px);
+  //margin-top: ($bannerHeight+5px);
 
   p, a{
-    width: $activeWidth;
-    padding: .5em;
+    width: 100%;
+    padding: .5em 1em .5em 0;
     text-align: justify;
     margin-bottom: 0;
+  }
+
+  img {
+    width: 100%;
+    border-radius: 50%;
+  }
+
+  .col-6:last-child {
+    padding-left: 0;
+    padding-right: 1.5em;
   }
 }
 

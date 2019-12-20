@@ -23,12 +23,18 @@ let bubbleListIndex = 0;
 $bubbleList.each(function(){
     let bubbleIndex = 0;
     let offsetAngle = 0;
+    let multipleBubbles = true;
     if ($(this).find(".offsetAngle").length > 0)
         offsetAngle = parseInt($(this).find('.offsetAngle').text());
+    if ($(this).children('.bubbleContainer').length === 1)
+        multipleBubbles = false;
+
 
     $(this).children('.bubbleContainer').each(function() {
-        $(this).css('transform', 'rotate(' + (listAngles[bubbleListIndex]*bubbleIndex + offsetAngle) + 'deg)' + 'translate(' + radius + 'px)');
-        $(this).children('.bubble').css('transform', 'rotate(' + (-listAngles[bubbleListIndex]*bubbleIndex - offsetAngle) + 'deg)');
+        if (multipleBubbles) {
+            $(this).css('transform', 'rotate(' + (listAngles[bubbleListIndex]*bubbleIndex + offsetAngle) + 'deg)' + 'translate(' + radius + 'px)');
+            $(this).children('.bubble').css('transform', 'rotate(' + (-listAngles[bubbleListIndex]*bubbleIndex - offsetAngle) + 'deg)');
+        }
         let backgroundImage = $(this).find('.bubbleBackgroundImage').attr('src');
         if (backgroundImage != null)
             $(this).children('.bubble').css('background-image', 'url("' + backgroundImage + '")');
@@ -52,13 +58,13 @@ $bubble.click(function() {
     if ($(this).hasClass('nonSelectableBubble'))
         return;
 
-    $(this).addClass('hoveredBubble');
-    $(this).parent('.bubbleContainer').addClass('hoveredBubbleContainer');
+    // $(this).addClass('hoveredBubble');
+    // $(this).parent('.bubbleContainer').addClass('hoveredBubbleContainer');
 
     //Create active bubble div
     const $body = $('body')
     $body.append('<div class="activeBubbleBackCover"></div>');
-    $body.append('<div class="activeBubbleShadow"></div>')
+    $body.append('<div class="activeBubbleShadow"></div>');
     $body.append('<div class="activeBubble"></div>');
     const activeBubble = $('.activeBubble');
     const activeBubbleShadow = $('.activeBubbleShadow');
@@ -78,7 +84,8 @@ $bubble.click(function() {
     const bubbleBackgroundColor = $(this).css('background-color');
     if (bubbleBackgroundColor != null)
         activeBubble.css('background-color', bubbleBackgroundColor);
-    changeSize(activeBubble, hoveredDiameter, activeWidth, 10);
+    changeSize(activeBubble, hoveredDiameter, activeWidth, 500);
+    // activeBubble.css('opacity', 1);
     //Pull header, description, and footer from bubble elements and place in active bubble
     $(this).children('.bubbleHeader').clone().appendTo(activeBubble);
     $(this).children('.bubbleDescription').clone().appendTo(activeBubble);
@@ -111,22 +118,14 @@ $(document).click(function(e) {
     if (!activeBubble.is(e.target) && activeBubble.has(e.target).length === 0 &&
     $(e.target).parents('.bubble').length === 0 &&
     !$(e.target).is('.bubble')) {
-    //     changeSize(activeBubble, baseDiameter, baseDiameter, "50%");
-    //     removeActive();
-    //     setTimeout(function () {
-    //         $('.hoveredBubble').removeClass('hoveredBubble');
-    //         $('.bubbleContainer').removeClass('hoveredBubbleContainer');
-    //     }, 20);
-    // }
-    // // if the target of the click is the active bubble itself
-    // else if ($(e.target).parents('.activeBubble').length !== 0 &&
-    // !$(e.target).is('.bubbleLink') ||
-    // $(e.target).is('.activeBubble')) {
         changeSize(activeBubble, hoveredDiameter, hoveredDiameter, "50%");
-        removeActive();
         setTimeout(function () {
-            $('.hoveredBubble').removeClass('hoveredBubble');
-            $('.bubbleContainer').removeClass('hoveredBubbleContainer');
+            changeSize(activeBubble, 0, 0, "50%");
+            activeBubble.empty();
+            activeBubble.css('margin-top', 0);
+            activeBubble.css('margin-left', 0);
+            // activeBubble.css('opacity', 0);
+            removeActive();
         }, 200);
     }
 });

@@ -35,6 +35,7 @@ $theme-colors: (
   src: url("../fonts/CaviarDreams.ttf") format("truetype");
 }
 
+
 //*********************
 //Navbar
 //*********************
@@ -293,7 +294,7 @@ svg {
 #tentacle4 {
   position: absolute;
   right: -50px;
-  top: 400%;
+  top: 500%;
   z-index: 100;
 }
 //tentacle4 media queries
@@ -359,8 +360,23 @@ svg {
 //*********************
 h1 {
   @include unselectable();
-  font-family: "Ink Free";
-  font-size: 120pt;
+  font-family: 'Rock Salt', cursive;
+  font-size: 100pt;
+  text-transform: lowercase;
+}
+
+@media (max-width: 940px) {
+  h1 {
+    font-size: 80pt;
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: map_get($grid-breakpoints, md)) {
+  h1 {
+    font-size: 65pt;
+    margin-top: 45px;
+  }
 }
 
 h3 {
@@ -409,7 +425,6 @@ h2 {
 //*********************
 #landingContainerMain {
   position: relative;
-  //top: -100px;
 }
 
 #mugAndTentacle {
@@ -471,7 +486,7 @@ h2 {
   display: block;
 
   h1 {
-    color: #aaa;
+    color: #bfbfbf;
     position: absolute;
   }
 
@@ -504,11 +519,11 @@ h2 {
   min-height: 500px;
   color: #aaa;
   background-color: #222;
-  -webkit-clip-path: polygon(0 14%, 100% 0%, 100% 97%, 0 91%);
-  clip-path: polygon(0 14%, 100% 0%, 100% 97%, 0 91%);
+  -webkit-clip-path: polygon(0 8%, 100% 0%, 100% 97%, 0 91%);
+  clip-path: polygon(0 8%, 100% 0%, 100% 97%, 0 91%);
 
   h1 {
-    color: #333;
+    color: #2f2f2f;
   }
 
   h3 {
@@ -540,9 +555,18 @@ h2 {
 
 //*****Portfolio*****//
 #portfolio {
-  padding-top: 75px;
   padding-bottom: 75px;
   min-height: 500px;
+}
+
+.smallScreenProjects {
+  img {
+    width: 100%;
+    border-radius: 50%;
+  }
+  p, a{
+    text-align: justify;
+  }
 }
 
 @media (max-width: 992px) {
@@ -586,7 +610,7 @@ h2 {
   clip-path: polygon(29% 2%, 100% 0, 100% 98%, 86% 100%, 0 96%, 0 0);
 
   h1 {
-    color: #333;
+    color: #2f2f2f;
   }
 
   h3 {
@@ -608,8 +632,10 @@ h2 {
 }
 
 .timelineText {
-  font-size: 13pt;
+  font-size: 1rem;
   width: 220px;
+  text-align: justify;
+  margin-bottom: 0;
 }
 
 @media (max-width: map_get($grid-breakpoints, lg))
@@ -624,7 +650,6 @@ h2 {
     }
   }
   .timelineText {
-    font-size: 11pt;
     width: 100%;
   }
 }
@@ -632,9 +657,6 @@ h2 {
 {
   #timeline img {
     max-width: 100%;
-  }
-  .timelineText {
-    font-size: 10pt;
   }
 }
 
@@ -646,12 +668,6 @@ h2 {
 
   #timeline {
     padding-top: 0;
-  }
-}
-
-@media (max-width: 400px) {
-  .timelineText {
-    font-size: 8pt;
   }
 }
 
