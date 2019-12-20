@@ -68,7 +68,7 @@
                     <ul class="list-unstyled mb-0">
                         <li>
                             <i id="iconLarge" class="material-icons">location_on</i>
-                            <p>Santa Rosa, CA 95401, USA</p>
+                            <p>Davis, CA 95616, USA</p>
                         </li>
                         <li class="mt-lg-3 mt-md-2">
                             <i id="iconLarge" class="material-icons iconLarge">phone</i>

@@ -2,14 +2,14 @@ var mugAndTentacle = '<svg id="mugAndTentacle" xmlns="http://www.w3.org/2000/svg
 
 var largeScreen =
     '<div class="row" id="large">\n' +
-    '<div class="col-6">\n' +
+    '<div class="col-7">\n' +
     mugAndTentacle +
     '</div>\n' +
-    '<div class="col-6 landingTextContainer">\n' +
+    '<div class="col-5 landingTextContainer">\n' +
     '<div class="row landingText">\n' +
-    '<h2>Hi! My name\'s Noah.<br/>\n' +
-    'I\'m currently pursuing a BS in<br/>\n' +
-    'Computer Engineering..</h2>\n' +
+    '<h2>Hi, I\'m Noah!<br/>\n' +
+    'I\'m currently pursuing a BS in ' +
+    'Computer Engineering at UC Davis..</h2>\n' +
     '</div>\n' +
     '</div>\n' +
     '</div>';
@@ -22,9 +22,9 @@ var smallScreen =
     '</div>\n' +
     '<div class="row landingTextContainer">\n' +
     '<div id="smallLandingDesc" class="col text-center">\n' +
-    '<h2>Hi! My name\'s Noah.<br/>\n' +
-    'I\'m currently pursuing a BS in<br/>\n' +
-    'Computer Engineering..</h2>\n' +
+    '<h2>Hi, I\'m Noah!<br/>\n' +
+    'I\'m currently pursuing a BS in ' +
+    'Computer Engineering at UC Davis..</h2>\n' +
     '</div>\n' +
     '</div>';
 
