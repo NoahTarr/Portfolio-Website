@@ -21,7 +21,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-lg-4 col-sm-6">
+            <div class="col-lg-4 col-12">
                 <div class="row">
                     <div class="col">
                         <h5 class="text-muted">
@@ -44,7 +44,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-sm-6">
+            <div class="col-lg-4 col-6">
                 <h5 class="text-muted">
                     Software.
                 </h5>
@@ -55,7 +55,7 @@
                 <p>Excel</p>
                 <p>Confluence</p>
             </div>
-            <div class="col-lg-4 col-sm-6">
+            <div class="col-lg-4 col-6">
                 <h5 class="text-muted">
                     Other.
                 </h5>
