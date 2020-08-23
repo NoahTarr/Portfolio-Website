@@ -10,4 +10,4 @@ jquery.min.js
 popper.min.js
 .htaccess
 src/.htaccess
-src/.htaccess
+/src/css/
