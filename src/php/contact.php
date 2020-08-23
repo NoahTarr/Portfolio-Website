@@ -47,6 +47,7 @@
                             </div>
                         </div>
 
+                        <!--
                         <div class="row">
                             <div class="col-md-3">
                                 <div class="md-form form-group form-label-group">
@@ -55,12 +56,19 @@
                                 </div>
                             </div>
                         </div>
+                        -->
                     </form>
 
                     <div class="text-center text-md-left">
-                        <button class="btn rounded-0 btn-primary" onclick="validateForm()">Send</button>
+                        <?php //<button class="btn rounded-0 btn-primary" onclick="validateForm()">Send</button> ?>
+                        <button class="btn rounded-0 btn-primary g-recaptcha" data-sitekey="6LdIRsIZAAAAABSiIOVYIdvRrNHE80K_-F_gP5-9" data-callback='onSubmit' data-action='submit'>Send</button>
                     </div>
-                    <div id="status" class="position-absolute"></div>
+                    <div class="text-muted text-size" style="font-size: 10px">
+                        This site is protected by reCAPTCHA and the Google
+                       <a href="https://policies.google.com/privacy">Privacy Policy</a> and
+                       <a href="https://policies.google.com/terms">Terms of Service</a> apply.
+                   </div>
+                    <div id="status"></div>
                 </div>
 
                 <!--Side Information-->
@@ -76,7 +84,7 @@
                         </li>
                         <li class="mt-lg-3 mt-md-2">
                             <i id="iconLarge" class="material-icons iconLarge">email</i>
-                            <p>noahtarr1@gmail.com</p>
+                            <p>contact@noahtarr.com</p>
                         </li>
                         <li class="mt-lg-3 mt-md-2">
                             <i id="iconLarge" class="material-icons iconLarge">account_box</i>

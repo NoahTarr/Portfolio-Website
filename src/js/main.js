@@ -82,10 +82,6 @@ $(window).ready(function(){
     if (landingContainerBottomPosition > windowHeight) {
         landingContainer.css('top', (windowHeight - landingContainerBottomPosition) - 20)
     }
-
-    //Set captcha numbers on page load
-    $('input[name=captcha]').attr("placeholder", captcha);
-    $('label[for=captcha]').text(captcha);
 });
 
 
@@ -164,6 +160,10 @@ $("a[href^='#']").click(function(e) {
 }(jQuery));
 
 //Validate contact form then submit it
+function onSubmit(token) {
+    validateForm();
+}
+
 function validateForm() {
     document.getElementById('status').innerHTML = "Sending...";
 
@@ -171,9 +171,7 @@ function validateForm() {
         'name'     : $('input[name=name]').val(),
         'email'    : $('input[name=email]').val(),
         'subject'  : $('input[name=subject]').val(),
-        'message'  : $('textarea[name=message]').val(),
-        'captcha'  : $('input[name=captcha]').val(),
-        'captchaValue'  : captchaFirstInt + captchaSecondInt
+        'message'  : $('textarea[name=message]').val()
     };
 
 
@@ -184,14 +182,13 @@ function validateForm() {
         data : formData,
         success: function(data, textStatus, jqXHR)
         {
-
             $('#status').text(data.message);
             if (data.code) //If mail was sent successfully, reset the form.
                 $('#contact-form').closest('form').find("input[type=text], textarea").val("");
         },
         error: function (jqXHR, textStatus, errorThrown)
         {
-            // $('#status').html(jqXHR.responseText);
+            $('#status').html(jqXHR.responseText);
             $('#status').html("<b>ERROR:</b><p>Please make sure all fields are entered correctly. If they are please use the email listed on the right and inform me.</p>");
         }
     });

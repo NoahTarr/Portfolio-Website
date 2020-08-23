@@ -8,7 +8,7 @@ $theme-colors: (
 
 
 // Bootstrap Sass Files - this is required to change the theme
-@import "../../node_modules/bootstrap/scss/bootstrap";
+@import "../../../node_modules/bootstrap/scss/bootstrap";
 
 
 //Mixins
@@ -586,6 +586,26 @@ h2 {
   padding-top: 75px;
   padding-bottom: 75px;
   min-height: 500px;
+  background-color: #222;
+  //With Timeline Container active
+  //-webkit-clip-path: polygon(29% 2%, 100% 0, 100% 98%, 86% 100%, 0 96%, 0 0);
+  //clip-path: polygon(29% 2%, 100% 0, 100% 98%, 86% 100%, 0 96%, 0 0);
+  
+  //Without
+  -webkit-clip-path: polygon(35% 5%, 100% 0, 100% 100%, 0 100%, 0 0);
+  clip-path: polygon(35% 5%, 100% 0, 100% 100%, 0 100%, 0 0);
+
+  color: map_get($theme-colors, light);
+
+  h1 {
+    color: #2f2f2f;
+  }
+
+  h3 {
+    color: #fff;
+  }
+
+  .grecaptcha-badge { visibility: hidden; }
 }
 
 @media (max-width: 992px) {
@@ -661,7 +681,7 @@ h2 {
 }
 
 @media (max-width: map_get($grid-breakpoints, sm)) {
-  #timelineContainer {
+  #timelineContainer, #contact {
     -webkit-clip-path: initial;
     clip-path: initial;
   }
@@ -678,8 +698,8 @@ h2 {
 //*********************
 .form-label-group input,
 .form-label-group textarea{
-  border-bottom: solid 2px map_get($theme-colors, dark);
-  color: map_get($theme-colors, dark);
+  border-bottom: solid 2px map_get($theme-colors, light);
+  color: map_get($theme-colors, light);
   outline: 0 !important;
 }
 .form-label-group input:focus,
@@ -706,7 +726,7 @@ label {
 }
 
 .form-control-plaintext:focus {
-  color: map_get($theme-colors, dark) !important;
+  color: map_get($theme-colors, light) !important;
 }
 
 .form-label-group {
@@ -729,7 +749,7 @@ label {
   width: 100%;
   margin-bottom: 0; /* Override default `<label>` margin */
   line-height: 1.5;
-  color: #495057;
+  //color: #495057;
   border: 1px solid transparent;
   border-radius: .25rem;
   -webkit-transition: all .1s ease-in-out;

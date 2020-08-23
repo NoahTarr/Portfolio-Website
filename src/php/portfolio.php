@@ -83,6 +83,7 @@
                             <div class="bubbleBackgroundText"><p>MORE COMING SOON</p></div>
                         </div>
                     </div>
+
                     <div class="bubbleContainer">
                         <div class="bubble">
                             <img class="bubbleBackgroundImage" src="../assets/Portfolio%20Images/megaTravel.png"/>
@@ -104,6 +105,7 @@
                             </div>
                         </div>
                     </div>
+
                     <div class="bubbleContainer">
                         <div class="bubble">
                             <img class="bubbleBackgroundImage" src="../assets/Portfolio%20Images/portfolio.png"/>
