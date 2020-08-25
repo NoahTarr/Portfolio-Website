@@ -35,7 +35,7 @@
                 <div class="row">
                     <div class="col">
                         <h5 class="text-muted">
-                            <u>Programming Languages.</u>
+                            <u>Languages.</u>
                         </h5>
                     </div>
                 </div>
@@ -49,6 +49,7 @@
                         <p>C# (.net)</p>
                         <p>PHP</p>
                         <p>SQL</p>
+                        <p>Verilog HDL</p>
                     </div>
                 </div>
             </div>
@@ -58,8 +59,10 @@
                 </h5>
                 <p>Git</p>
                 <p>TFS</p>
-                <p>Visual Studio</a>
+                <p>Visual Studio</p>
                 <p>JetBrains IDE's</p>
+                <p>TI Code Composer Studio</p>
+                <p>Modelsim</p>
                 <p>Illustrator</p>
             </div>
             <div class="col-12 col-lg-4">
@@ -67,6 +70,10 @@
                     <u>Other.</u>
                 </h5>
                 <p>Machine Learning</p>
+                <p>Embedded Systems</p>
+                <p>Arduino</p>
+                <p>FPGA Development</p>
+                <p>Digital Systems</p>
                 <p>Bootstrap</p>
                 <p>SASS/SCSS</p>
                 <p>XLM/JSON Markup</p>
