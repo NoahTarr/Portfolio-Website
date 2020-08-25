@@ -228,7 +228,7 @@ svg {
 #tentacle3 {
   position: absolute;
   left: -200px;
-  top: 300%;
+  top: 280%;
   z-index: 100;
 }
 //tentacle3 media queries
@@ -379,11 +379,6 @@ h1 {
   }
 }
 
-h3 {
-  font-family: "Caviar Dreams";
-  font-size: 25pt;
-}
-
 h2 {
   font-family: "Caviar Dreams";
   font-size: 28pt;
@@ -392,6 +387,15 @@ h2 {
   h2 {
     font-size: 20pt;
   }
+}
+
+h3 {
+  font-family: "Caviar Dreams";
+  font-size: 25pt;
+}
+
+h4 {
+  color: map_get($theme-colors, light);
 }
 
 .landingTextContainer {
@@ -560,6 +564,15 @@ h2 {
 }
 
 .smallScreenProjects {
+  >.col>.row {
+    >.col {
+      border-bottom: 1px solid map_get($theme-colors, dark);
+      padding: 20px 0;
+    }
+    &:last-child>.col {
+      border-bottom: none;
+    }
+  }
   img {
     width: 100%;
     border-radius: 50%;
