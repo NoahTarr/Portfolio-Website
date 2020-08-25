@@ -60,10 +60,9 @@
                     </form>
 
                     <div class="text-center text-md-left">
-                        <?php //<button class="btn rounded-0 btn-primary" onclick="validateForm()">Send</button> ?>
                         <button class="btn rounded-0 btn-primary g-recaptcha" data-sitekey="6LdIRsIZAAAAABSiIOVYIdvRrNHE80K_-F_gP5-9" data-callback='onSubmit' data-action='submit'>Send</button>
                     </div>
-                    <div class="text-muted text-size" style="font-size: 10px">
+                    <div class="text-muted text-center text-md-left" style="font-size: 10px">
                         This site is protected by reCAPTCHA and the Google
                        <a href="https://policies.google.com/privacy">Privacy Policy</a> and
                        <a href="https://policies.google.com/terms">Terms of Service</a> apply.
