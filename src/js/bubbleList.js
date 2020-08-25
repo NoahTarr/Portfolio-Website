@@ -47,8 +47,38 @@ $bubbleList.each(function(){
         bubbleIndex++;
     });
     bubbleListIndex++;
-});
+}).promise().done(setBubbleListSize());
 
+$(window).resize(function() {
+    setBubbleListSize();
+})
+
+function setBubbleListSize() {
+    $bubbleList.each(function() {
+        let smallestX = 999999;
+        let largestX = -999999;
+        let smallestY = 999999;
+        let largestY = -999999;
+
+        $(this).find('.bubble').each(function() {
+            const left = $(this).offset().left;
+            const right = $(this).offset().left + $(this).width();
+            const top = $(this).offset().top;
+            const bottom = $(this).offset().top + $(this).height();
+            if (left < smallestX)
+                smallestX = left;
+            if (right > largestX)
+                largestX = right;
+            if (top < smallestY)
+                smallestY = top;
+            if (bottom > largestY)
+                largestY = bottom;
+        });
+
+        $(this).css('width', largestX - smallestX);
+        $(this).css('height', largestY - smallestY);
+    });
+}
 
 
 
@@ -58,8 +88,10 @@ $bubble.click(function() {
     if ($(this).hasClass('nonSelectableBubble'))
         return;
 
-    // $(this).addClass('hoveredBubble');
-    // $(this).parent('.bubbleContainer').addClass('hoveredBubbleContainer');
+    let activeExpandLeft = false;
+    if ($(this).parents('.bubbleList').hasClass('activeExpandLeft') ||
+        $(this).hasClass('activeExpandLeft'))
+        activeExpandLeft = true;
 
     //Create active bubble div
     const $body = $('body')
@@ -84,12 +116,14 @@ $bubble.click(function() {
     const bubbleBackgroundColor = $(this).css('background-color');
     if (bubbleBackgroundColor != null)
         activeBubble.css('background-color', bubbleBackgroundColor);
-    changeSize(activeBubble, hoveredDiameter, activeWidth, 500);
     // activeBubble.css('opacity', 1);
     //Pull header, description, and footer from bubble elements and place in active bubble
     $(this).children('.bubbleHeader').clone().appendTo(activeBubble);
     $(this).children('.bubbleDescription').clone().appendTo(activeBubble);
     $(this).children('.bubbleFooter').clone().appendTo(activeBubble);
+    changeSize(activeBubble, hoveredDiameter, activeWidth, 500);
+    if (activeExpandLeft)
+        activeBubble.css('margin-left', -hoveredDiameter);
 });
 
 
@@ -119,6 +153,7 @@ $(document).click(function(e) {
     $(e.target).parents('.bubble').length === 0 &&
     !$(e.target).is('.bubble')) {
         changeSize(activeBubble, hoveredDiameter, hoveredDiameter, "50%");
+        activeBubble.css('margin-left', -.5 * hoveredDiameter);
         setTimeout(function () {
             changeSize(activeBubble, 0, 0, "50%");
             activeBubble.empty();
@@ -146,8 +181,8 @@ function removeActive() {
 
 
 //Animation Functions
-function changeSize(bubble, height, width, borderRadius) {
-    bubble.css('width', width);
-    bubble.css('height', height);
-    bubble.css('border-radius', borderRadius);
+function changeSize($bubble, height, width, borderRadius) {
+    $bubble.css('width', width);
+    $bubble.css('height', height);
+    $bubble.css('border-radius', borderRadius);
 }

@@ -9,7 +9,7 @@ Variables
 //******You can change these to your liking
 //Polar Coordinate Radial Component
 //The distance from the center of the list to the center of each bubble
-$radius: 130px;
+$radius: 150px;
 
 //Base bubble
 $baseDiameter: 125px;
@@ -17,7 +17,7 @@ $baseBorderRadius: 500px;
 $borderWidth: 0;
 $borderStyle: solid;
 $borderColor: #222;
-$baseOpacity: .6;
+$baseOpacity: 1;
 $backgroundColor: #ffffff;
 
 //Hovered bubble
@@ -153,12 +153,6 @@ Bubble List Style
   transition: ease-in-out .1s, transform 0s;
 }
 
-@media (max-width: 1024px) {
-  .bubble {
-    opacity: 1;
-  }
-}
-
 .bubble:hover, .hoveredBubble {
   width: $hoveredDiameter;
   height: $hoveredDiameter;
@@ -249,7 +243,7 @@ Bubble List Style
   flex-wrap: wrap;
   align-content: space-between;
   position: absolute;
-  width: $activeDiameter;
+  width: $hoveredDiameter;
   height: $hoveredDiameter;
   margin-top: -.5 * $hoveredDiameter;
   margin-left: -.5 * $hoveredDiameter;
