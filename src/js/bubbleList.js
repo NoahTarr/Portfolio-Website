@@ -51,6 +51,7 @@ $bubbleList.each(function(){
 
 $(window).resize(function() {
     setBubbleListSize();
+    removeActive();
 })
 
 function setBubbleListSize() {
