@@ -21,7 +21,7 @@
                         <p>
                             Beyond programming, engineering, and web development, I am passionate about running,
                             snowboarding, and live music. I am also an active board member in the &Theta;&Xi; (Theta Xi)
-                            fraternity. My role in this fraternity include both academic and social responsibilities.
+                            fraternity. My role in this fraternity includes both academic and social responsibilities.
                         </p>
                     </div>
                 </div>
